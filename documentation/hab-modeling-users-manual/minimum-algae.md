@@ -41,4 +41,5 @@ The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also cont
 
 ---
 
-[Previous: User Manual Overview](/hab-modeling/) | [Next: Chapter 2 - Low DO Mortality](/hab-modeling/low-do-mortality/)
+[Previous: Chapter 2 - Algal Harvesting](/hab-modeling/algal-harvesting/) | [Next: Chapter 4 - Low DO Mortality](/hab-modeling/low-do-mortality/)
+

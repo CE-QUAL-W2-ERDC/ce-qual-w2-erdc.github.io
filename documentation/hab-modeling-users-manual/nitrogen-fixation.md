@@ -63,4 +63,5 @@ In this example with 3 algal groups, only group 3 (e.g., a cyanobacteria) fixes 
 
 ---
 
-[Previous: Chapter 3 - Algal Harvesting](/hab-modeling/algal-harvesting/) | [Next: Quick Start Guide](/hab-modeling/quick-start/)
+[Previous: User Manual Overview](/hab-modeling/) | [Next: Chapter 2 - Algal Harvesting](/hab-modeling/algal-harvesting/)
+

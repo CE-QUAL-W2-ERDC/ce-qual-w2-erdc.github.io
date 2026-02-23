@@ -130,4 +130,5 @@ Note that `Event_Mass_kg` and `Cumulative_Mass_kg` report totals across all alga
 
 ---
 
-[Previous: Chapter 2 - Low DO Mortality](/hab-modeling/low-do-mortality/) | [Next: Chapter 4 - Nitrogen Fixation](/hab-modeling/nitrogen-fixation/)
+[Previous: Chapter 1 - Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | [Next: Chapter 3 - Minimum Algae](/hab-modeling/minimum-algae/)
+

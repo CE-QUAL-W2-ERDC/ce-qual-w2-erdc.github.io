@@ -40,4 +40,5 @@ To disable a feature, simply remove (or rename) its input file from the run dire
 
 ---
 
-[Previous: Chapter 4 - Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | [User Manual Overview](/hab-modeling/)
+[Previous: Chapter 4 - Low DO Mortality](/hab-modeling/low-do-mortality/) | [User Manual Overview](/hab-modeling/)
+

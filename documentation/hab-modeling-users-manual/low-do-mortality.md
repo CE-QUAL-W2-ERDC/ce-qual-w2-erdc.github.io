@@ -101,4 +101,5 @@ In this example with 3 algal groups:
 
 ---
 
-[Previous: Chapter 1 - Minimum Algae](/hab-modeling/minimum-algae/) | [Next: Chapter 3 - Algal Harvesting](/hab-modeling/algal-harvesting/)
+[Previous: Chapter 3 - Minimum Algae](/hab-modeling/minimum-algae/) | [Next: Quick Start Guide](/hab-modeling/quick-start/)
+
