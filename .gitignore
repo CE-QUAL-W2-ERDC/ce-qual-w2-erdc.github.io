@@ -1,5 +1,8 @@
 # MacOS
 .DS_Store
 
-# Other 
+# Jekyll build output
+_site/
+
+# Other
 CLAUDE.md
