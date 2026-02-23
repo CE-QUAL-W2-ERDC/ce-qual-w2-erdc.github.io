@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Documentation - CE-QUAL-W2
-permalink: /documentation/
 ---
 
 # CE-QUAL-W2 Documentation

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Publications - CE-QUAL-W2
-permalink: /publications/
 ---
 
 # Publications
