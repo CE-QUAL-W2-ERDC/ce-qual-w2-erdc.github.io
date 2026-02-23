@@ -24,12 +24,13 @@ Download the appropriate executable for your operating system:
 
 | Platform | Version | Download                                                      | Size   | Requirements           |
 | -------- | ------- | ------------------------------------------------------------- | ------ | ---------------------- |
-| Windows  | v2006   | [w2_v2006.02_win64.exe](/executables/w2_v2006_windows_x64.exe) | 9.5 MB | Windows 10/11 (64-bit) |
-| Linux    | v2006   | [w2_v2006.02_linux](/executables/w2_v2006.02_linux)            | 9.5 MB | gfortran libraries     |
-| macOS    | v2006   | [w2_v2006.02_macOS](/executables/w2_v2006.02_macOS)            | 9.5 MB | macOS 26.1+            |
+| Windows  | v2006   | [w2_v2006.02_win64.exe](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_win_x64.exe) | 16.7 MB | Windows 10/11 (64-bit) |
+| Linux    | v2006   | [w2_v2006.02_linux](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_linux)           | 10.8 MB | gfortran libraries     |
+| macOS    | v2006   | [w2_v2006.02_macOS](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_macos)           | 10.8 MB | macOS 26.1+            |
 | Windows  | v4.5    | [w2_v45_win64.exe](/executables/w2_v45_64.exe)                 | 6.5 MB | Windows 10/11 (64-bit) |
 
-**Note:** ERDC v2006 has new capabilities for Harmful Algal Bloom (HAB) simulations.
+
+**Note:** ERDC's CE-QUAL-W2 Version 2006 has new capabilities for Harmful Algal Bloom (HAB) simulations.
 
 ### Pre-Processor Executables
 
