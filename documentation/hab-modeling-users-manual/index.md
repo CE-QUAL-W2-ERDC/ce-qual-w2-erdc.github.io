@@ -38,3 +38,9 @@ All four features use **file-existence-based activation**. None are controlled b
 To disable any feature, remove (or rename) its input file from the run directory. No changes to the main control file are needed.
 
 ---
+
+## HAB Management Scenarios
+
+[HAB Management Scenarios](/hab-modeling/hab-management-scenarios/) — Guidance for using CE-QUAL-W2 to evaluate operational strategies for managing cyanobacterial blooms in reservoirs and lakes. Covers environmental factors controlling bloom development, eight management strategies, model capabilities for HAB assessment, and scenario design and evaluation.
+
+---
