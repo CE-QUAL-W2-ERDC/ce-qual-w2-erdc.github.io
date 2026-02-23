@@ -13,7 +13,7 @@ CE-QUAL-W2 is available in two versions:
 
 | Version                                     | Description                                                                                                                                           | Status |
 | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| ERDC Version 2026 with New HAB Capabilities | Based on PSU's CE-QUAL-W2 v4.5, ERDC's CE-QUAL-W2 v2006 adds nitrogen fixation, algal harvesting, minimum algae concentration, and mortality associated with hypoxic conditions | Stable |
+| ERDC Version 2026 with New HAB Capabilities | Based on PSU's CE-QUAL-W2 v4.5, ERDC's CE-QUAL-W2 v2026 adds nitrogen fixation, algal harvesting, minimum algae concentration, and mortality associated with hypoxic conditions | Stable |
 | PSU Version 4.5                             | Standard release with ongoing development by Portland State University                                                                                | Active |
 
 Both versions share the same preprocessor and input file formats. See [HAB Modeling](/hab-modeling/) for details on the new capabilities.
@@ -24,13 +24,13 @@ Download the appropriate executable for your operating system:
 
 | Platform | Version    | Download                                                                                   | Size    | Requirements           |
 | -------- | ---------- | ------------------------------------------------------------------------------------------ | ------- | ---------------------- |
-| Windows  | ERDC v2006 | [w2_v2006.02_win64.exe](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_win_x64.exe) | 16.7 MB | Windows 10/11 (64-bit) |
-| Linux    | ERDC v2006 | [w2_v2006.02_linux](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_linux)           | 10.8 MB | gfortran libraries     |
-| macOS    | ERDC v2006 | [w2_v2006.02_macOS](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_macos)           | 10.8 MB | macOS 26.1+            |
+| Windows  | ERDC v2026 | [w2_v2026.02_win64.exe](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_win_x64.exe) | 16.7 MB | Windows 10/11 (64-bit) |
+| Linux    | ERDC v2026 | [w2_v2026.02_linux](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_linux)           | 10.8 MB | gfortran libraries     |
+| macOS    | ERDC v2026 | [w2_v2026.02_macOS](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_macos)           | 10.8 MB | macOS 26.1+            |
 | Windows  | PSU v4.5   | [w2_v45_win64.exe](/executables/PSU_CE-QUAL-W2_v45_x64/w2_v45_64.exe)                      | 6.5 MB  | Windows 10/11 (64-bit) |
 
 
-**Note:** ERDC's CE-QUAL-W2 Version 2006 has new capabilities for Harmful Algal Bloom (HAB) simulations.
+**Note:** ERDC's CE-QUAL-W2 Version 2026 has new capabilities for Harmful Algal Bloom (HAB) simulations.
 
 ### Pre-Processor Executables
 
@@ -38,24 +38,25 @@ Download the appropriate executable for your operating system:
 
 | Platform    | Version | Download                                          | Size   | Requirements           |
 | ----------- | ------- | ------------------------------------------------- | ------ | ---------------------- |
-| **Windows** | v4.5    | [preW2-v45_64.exe](/executables/preW2-v45_64.exe) | 9.6 MB | Windows 10/11 (64-bit) |
+| **Windows** | v4.5    | [preW2-v45_64.exe](/executables/PSU_CE-QUAL-W2_v45_x64/preW2-v45_64.exe) | 9.6 MB | Windows 10/11 (64-bit) |
 
 ### Source Code
 
-| Item                     |                                                             |
-| ------------------------ | ----------------------------------------------------------- |
-| CE-QUAL-W2 model         | [w2source_7_7_2025.zip](/src/w2source_7_7_2025.zip)         |
-| CE-QUAL-W2 pre-processor | [PreW2_source_July2025.zip](/src/PreW2_source_July2025.zip) |
+| Item                             |                                                                                   |
+| -------------------------------- | --------------------------------------------------------------------------------- |
+| CE-QUAL-W2 model (ERDC v2026)   | [ERDC_CE-QUAL-W2_source_v2026.02.zip](/src/ERDC_CE-QUAL-W2_source_v2026.02.zip)   |
+| CE-QUAL-W2 model (PSU v4.5)     | [PSU_CE-QUAL-W2_source_2025_07_07.zip](/src/PSU_CE-QUAL-W2_source_2025_07_07.zip) |
+| CE-QUAL-W2 pre-processor         | [PreW2_source_July2025.zip](/src/PreW2_source_July2025.zip)                       |
 
 ### Documentation
 
 | Document                   | Description                 | Download                                                              |
 | -------------------------- | --------------------------- | --------------------------------------------------------------------- |
-| **Part 1: Introduction**   | Getting started guide       | [Download](/documentation/W2manual45_Part1_Intro_rev9.pdf)            |
-| **Part 2: Theory**         | Model theory and equations  | [Download](/documentation/W2manual45_Part2_Theory_rev8.pdf)           |
-| **Part 3: Input/Output**   | File formats and parameters | [Download](/documentation/W2manual45_Part3_InputOutputFiles_rev8.pdf) |
-| **Part 4: Examples**       | Tutorial and test cases     | [Download](/documentation/W2manual45_Part4_ModelExamples_rev3.pdf)    |
-| **Part 5: Utilities**      | Tools and preprocessors     | [Download](/documentation/W2manual45_Part5_ModelUtilities_rev9.pdf)   |
+| **Part 1: Introduction**   | Getting started guide       | [Download](/documentation/users-manual/W2manual45_Part1_Intro_rev9.pdf)            |
+| **Part 2: Theory**         | Model theory and equations  | [Download](/documentation/users-manual/W2manual45_Part2_Theory_rev8.pdf)           |
+| **Part 3: Input/Output**   | File formats and parameters | [Download](/documentation/users-manual/W2manual45_Part3_InputOutputFiles_rev8.pdf) |
+| **Part 4: Examples**       | Tutorial and test cases     | [Download](/documentation/users-manual/W2manual45_Part4_ModelExamples_rev3.pdf)    |
+| **Part 5: Utilities**      | Tools and preprocessors     | [Download](/documentation/users-manual/W2manual45_Part5_ModelUtilities_rev9.pdf)   |
 
 ### Example Applications
 
