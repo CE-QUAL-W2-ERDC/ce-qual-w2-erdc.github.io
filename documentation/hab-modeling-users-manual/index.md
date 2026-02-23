@@ -4,11 +4,11 @@ title: "HAB Features User Manual"
 permalink: /hab-modeling/
 ---
 
-# CE-QUAL-W2 HAB Features User Manual
+# CE-QUAL-W2 HAB Features User's Manual
 
 ## Overview
 
-CE-QUAL-W2 Version 4.5 (ERDC/PSU) includes four optional features for Harmful Algal Bloom (HAB) simulation:
+ERDC's CE-QUAL-W2 Version 2026.02 (based on PSU's Version 4.5 of CE-QUAL-W2) includes four new capabilities for Harmful Algal Bloom (HAB) simulation:
 
 1. **Minimum Algae (Seed Population)** -- maintains a floor concentration so algae can regrow after crash events
 2. **Low DO Mortality** -- increases algal mortality when dissolved oxygen stays low for an extended period
