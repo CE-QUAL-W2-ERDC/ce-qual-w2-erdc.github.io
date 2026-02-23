@@ -6,6 +6,9 @@ title: Examples - CE-QUAL-W2
 # Example Applications
 
 
+| Example                     | Description                      | Files                                                                                                                                                             |
+| --------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bonneville Dam              | TDG Modeling                     | [Bonneville_Dam_with_TDG_computed_using_SYSTDG.zip](/examples/Bonneville_Dam_with_TDG_computed_using_SYSTDG.zip)                                                   |
 | Columbia Slough Estuary     | Temperature modeling             | [Columbia_Slough_Estuary.zip](/examples/Columbia_Slough_Estuary.zip)                                                                                               |
 | DeGray Reservoir            | Stratification and water quality | [DeGray_Reservoir_with_sediment_diagenesis_and_vertical_algae_migration.zip](/examples/DeGray_Reservoir_with_sediment_diagenesis_and_vertical_algae_migration.zip) |
 | Detroit Lake                | Stratification and water quality | [Detroit_Lake.zip](/examples/Detroit_Lake.zip)                                                                                                                     |

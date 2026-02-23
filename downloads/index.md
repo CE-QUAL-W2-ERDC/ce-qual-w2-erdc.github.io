@@ -50,35 +50,32 @@ Download the appropriate executable for your operating system:
 
 ### Documentation
 
-| Document                   | Description                 | Download                                                              |
-| -------------------------- | --------------------------- | --------------------------------------------------------------------- |
-| **Part 1: Introduction**   | Getting started guide       | [Download](/documentation/users-manual/W2manual45_Part1_Intro_rev9.pdf)            |
-| **Part 2: Theory**         | Model theory and equations  | [Download](/documentation/users-manual/W2manual45_Part2_Theory_rev8.pdf)           |
-| **Part 3: Input/Output**   | File formats and parameters | [Download](/documentation/users-manual/W2manual45_Part3_InputOutputFiles_rev8.pdf) |
-| **Part 4: Examples**       | Tutorial and test cases     | [Download](/documentation/users-manual/W2manual45_Part4_ModelExamples_rev3.pdf)    |
-| **Part 5: Utilities**      | Tools and preprocessors     | [Download](/documentation/users-manual/W2manual45_Part5_ModelUtilities_rev9.pdf)   |
+The complete 5-part user manual (PDF) is available on the [Documentation](/documentation/) page.
 
 ### Example Applications
 
-| Example                     | Description                      | Files                                                                                                                                                             |
-| --------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bonneville Dam              | TDG Modeling                     | [Bonneville_Dam_with_TDG_computed_using_SYSTDG.zip](/examples/Bonneville_Dam_with_TDG_computed_using_SYSTDG.zip)                                                   |
-| Columbia Slough Estuary     | Temperature modeling             | [Columbia_Slough_Estuary.zip](/examples/Columbia_Slough_Estuary.zip)                                                                                               |
-| DeGray Reservoir            | Stratification and water quality | [DeGray_Reservoir_with_sediment_diagenesis_and_vertical_algae_migration.zip](/examples/DeGray_Reservoir_with_sediment_diagenesis_and_vertical_algae_migration.zip) |
-| Detroit Lake                | Stratification and water quality | [Detroit_Lake.zip](/examples/Detroit_Lake.zip)                                                                                                                     |
-| Long Lake                   | Stratification and water quality | [Long_Lake.zip](/examples/Long_Lake.zip)                                                                                                                           |
-| Multiple Water Body Cascade | Stratification and water quality | [MultipleWaterBodyCascade.zip](/examples/Multiple_Water_Body_Cascade.zip)                                                                                          |
-| Particle Tracking           | Particle Tracking                | [Particle_Tracking_in_Reservoirs.zip](/examples/Particle_Tracking_in_Reservoirs.zip)                                                                               |
-| Spokane River               | Stratification and water quality | [Spokane_River.zip](/examples/Spokane_River.zip)                                                                                                                   |
+Downloadable model applications are available on the [Examples](/examples/) page.
 
 ## Installation Instructions
 
 ### Windows
 
-1. Download the Windows executable
-2. Extract to your desired directory (e.g., `C:\CE-QUAL-W2`)
+1. Download the Windows executable (`w2_2026.02_erdc_win_x64.exe` or `w2_v45_64.exe`)
+2. Place in your desired directory (e.g., `C:\CE-QUAL-W2`)
 3. Add the directory to your system PATH (optional)
-4. Test installation by running `w2_v45_win64.exe` from command prompt
+4. Test by running the executable from a command prompt
+
+### Linux
+
+1. Download `w2_2026.02_erdc_linux`
+2. Make executable: `chmod +x w2_2026.02_erdc_linux`
+3. Ensure gfortran runtime libraries are installed
+
+### macOS
+
+1. Download `w2_2026.02_erdc_macos`
+2. Make executable: `chmod +x w2_2026.02_erdc_macos`
+3. On first run, you may need to allow execution in System Settings > Privacy & Security
 
 ## System Requirements
 
@@ -87,7 +84,7 @@ Download the appropriate executable for your operating system:
 - **Processor**: Intel/AMD x86-64
 - **RAM**: 8 GB (16 GB recommended)
 - **Storage**: 500 MB for program files
-- **OS**: Windows 10/11
+- **OS**: Windows 10/11, Linux, or macOS
 
 ### Recommended for Large Models
 
@@ -99,6 +96,6 @@ Download the appropriate executable for your operating system:
 
 Please cite CE-QUAL-W2 in publications as:
 
-> Cole, T.M., and Wells, S.A. (2025). "CE-QUAL-W2: A Two-Dimensional, Laterally Averaged, Hydrodynamic and Water Quality Model, Version 4.5."
+> Cole, T.M., and Wells, S.A. (2023). "CE-QUAL-W2: A Two-Dimensional, Laterally Averaged, Hydrodynamic and Water Quality Model, Version 4.5." U.S. Army Engineer Research and Development Center, Vicksburg, MS.
 
 *Last updated: February 2026*
