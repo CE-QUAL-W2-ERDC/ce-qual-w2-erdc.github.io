@@ -27,6 +27,8 @@ navigation:
     url: /downloads/
   - title: HAB Modeling
     url: /hab-modeling/
+  - title: HAB Management Scenarios
+    url: /hab-modeling/hab-management-scenarios/
   - title: Examples
     url: /examples/
   - title: Publications
