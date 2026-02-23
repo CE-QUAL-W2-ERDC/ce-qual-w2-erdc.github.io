@@ -13,7 +13,7 @@ CE-QUAL-W2 is available in two versions:
 
 | Version                                     | Description                                                                                                                                           | Status |
 | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| ERDC Version 2026 with New HAB Capabilities | Based on PSU v4.5, ERDC v2006 adds nitrogen fixation, algal harvesting, minimum algae concentration, and mortality associated with hypoxic conditions | Stable |
+| ERDC Version 2026 with New HAB Capabilities | Based on PSU's CE-QUAL-W2 v4.5, ERDC's CE-QUAL-W2 v2006 adds nitrogen fixation, algal harvesting, minimum algae concentration, and mortality associated with hypoxic conditions | Stable |
 | PSU Version 4.5                             | Standard release with ongoing development by Portland State University                                                                                | Active |
 
 Both versions share the same preprocessor and input file formats. See [HAB Modeling](/hab-modeling/) for details on the new capabilities.
