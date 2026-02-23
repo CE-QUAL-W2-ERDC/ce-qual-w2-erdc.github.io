@@ -12,7 +12,7 @@ The CE-QUAL-W2 User Manual is organized into five comprehensive parts covering a
 
 ### Part 1: Introduction
 
-[Download PDF](W2manual45_Part1_Intro_rev6.pdf) (1.6 MB)
+[Download PDF](W2manual45_Part1_Intro_rev9.pdf) (1.6 MB)
 
 - Model overview, terminology, and history
 - Capabilities and limitations
@@ -24,7 +24,7 @@ The CE-QUAL-W2 User Manual is organized into five comprehensive parts covering a
 
 ### Part 2: Theory
 
-[Download PDF](W2manual45_Part2_Theory_rev6.pdf) (4.8 MB)
+[Download PDF](W2manual45_Part2_Theory_rev8.pdf) (4.8 MB)
 
 - Governing equations and lateral averaging
 - Hydrodynamic algorithms and turbulence formulations
@@ -42,7 +42,7 @@ The CE-QUAL-W2 User Manual is organized into five comprehensive parts covering a
 
 ### Part 3: Input/Output Files
 
-[Download PDF](W2manual45_Part3_InputOutputFiles_rev6.pdf) (15 MB)
+[Download PDF](W2manual45_Part3_InputOutputFiles_rev8.pdf) (15 MB)
 
 - Control file parameters (grid, timestep, heat exchange, ice, transport, structures, kinetics)
 - Bathymetry file formats (fixed and CSV)
@@ -74,7 +74,7 @@ The CE-QUAL-W2 User Manual is organized into five comprehensive parts covering a
 
 ### Part 5: Model Utilities
 
-[Download PDF](W2manual45_Part5_ModelUtilities_rev6.pdf) (3.7 MB)
+[Download PDF](W2manual45_Part5_ModelUtilities_rev9.pdf) (3.7 MB)
 
 - Water balance utility (GUI and console versions)
 - Control file converter

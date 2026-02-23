@@ -26,8 +26,8 @@ Download the appropriate executable for your operating system:
 | Platform | Version | Download                                                      | Size   | Requirements           |
 | -------- | ------- | ------------------------------------------------------------- | ------ | ---------------------- |
 | Windows  | v2006   | [w2_v2006.02_win64.exe](executables/w2_v2006_windows_x64.exe) | 9.5 MB | Windows 10/11 (64-bit) |
-| Linux    | v2006   | [w2_v2006.02_macOS](executables/w2_v2006.02_macOS)            | 9.5 MB | gfortran libraries     |
-| macOS    | v2006   | [w2_v2006.02_macOS](executables/w2_v2006.02_linux)            | 9.5    | macOS 26.1+            |
+| Linux    | v2006   | [w2_v2006.02_linux](executables/w2_v2006.02_linux)            | 9.5 MB | gfortran libraries     |
+| macOS    | v2006   | [w2_v2006.02_macOS](executables/w2_v2006.02_macOS)            | 9.5 MB | macOS 26.1+            |
 | Windows  | v4.5    | [w2_v45_win64.exe](executables/w2_v45_64.exe)                 | 6.5 MB | Windows 10/11 (64-bit) |
 
 **Note:** ERDC v2006 has new capabilities for Harmful Algal Bloom (HAB) simulations.
@@ -51,18 +51,18 @@ Download the appropriate executable for your operating system:
 
 | Document                   | Description                 | Download                                                             |
 | -------------------------- | --------------------------- | -------------------------------------------------------------------- |
-| **Part 1: Introduction**   | Getting started guide       | [Download](documentation/W2manual45_Part1_Intro_rev6.pdf)            |
-| **Part 2: Theory**         | Model theory and equations  | [Download](documentation/W2manual45_Part2_Theory_rev6.pdf)           |
-| **Part 3: Input/Output**   | File formats and parameters | [Download](documentation/W2manual45_Part3_InputOutputFiles_rev6.pdf) |
+| **Part 1: Introduction**   | Getting started guide       | [Download](documentation/W2manual45_Part1_Intro_rev9.pdf)            |
+| **Part 2: Theory**         | Model theory and equations  | [Download](documentation/W2manual45_Part2_Theory_rev8.pdf)           |
+| **Part 3: Input/Output**   | File formats and parameters | [Download](documentation/W2manual45_Part3_InputOutputFiles_rev8.pdf) |
 | **Part 4: Examples**       | Tutorial and test cases     | [Download](documentation/W2manual45_Part4_ModelExamples_rev3.pdf)    |
-| **Part 5: Utilities**      | Tools and preprocessors     | [Download](documentation/W2manual45_Part5_ModelUtilities_rev6.pdf)   |
+| **Part 5: Utilities**      | Tools and preprocessors     | [Download](documentation/W2manual45_Part5_ModelUtilities_rev9.pdf)   |
 
 ### Example Applications
 
 | Example                     | Description                      | Files                                                                                                                                                             |
 | --------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Bonneville Dam              | TDG Modeling                     | [Bonneville_Dam_with_TDG_computed_using_SYSTDG.zip](examples/Bonneville_Dam_with_TDG_computed_using_SYSTDG.zip)                                                   |
-| Columbia Slough Estuary     | Temperature modeling             | [Columbia_Slough_Estuary.zip](examples/Columbia Slough Estuary.zip)                                                                                               |
+| Columbia Slough Estuary     | Temperature modeling             | [Columbia_Slough_Estuary.zip](examples/Columbia_Slough_Estuary.zip)                                                                                               |
 | DeGray Reservoir            | Stratification and water quality | [DeGray_Reservoir_with_sediment_diagenesis_and_vertical_algae_migration.zip](examples/DeGray_Reservoir_with_sediment_diagenesis_and_vertical_algae_migration.zip) |
 | Detroit Lake                | Stratification and water quality | [Detroit_Lake.zip](examples/Detroit_Lake.zip)                                                                                                                     |
 | Long Lake                   | Stratification and water quality | [Long_Lake.zip](examples/Long_Lake.zip)                                                                                                                           |
