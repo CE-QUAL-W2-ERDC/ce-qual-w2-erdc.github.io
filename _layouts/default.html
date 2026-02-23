@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!-- MathJax for equation rendering -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+      .wrapper {
+        max-width: 1200px;
+      }
+      
+      header {
+        width: 220px;
+      }
+      
+      section {
+        width: calc(100% - 240px);
+        max-width: 900px;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      nav ul li a {
+        display: block;
+        padding: 8px 12px;
+        background: #f4f4f4;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+        transition: background 0.3s;
+      }
+      
+      nav ul li a:hover {
+        background: #e0e0e0;
+      }
+      
+      nav ul li a.active {
+        /* background: #267CB9; */
+        background: #42ac69;
+        color: white;
+      }
+      
+      .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #267CB9;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      
+      .download-button:hover {
+        background: #1e5f8e;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      
+      table th {
+        background: #f4f4f4;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+      }
+      
+      table td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      details {
+        margin: 15px 0;
+        padding: 10px;
+        background: #f9f9f9;
+        border-left: 3px solid #267CB9;
+      }
+      
+      details summary {
+        cursor: pointer;
+        padding: 5px;
+        margin: -10px;
+        padding: 10px;
+      }
+      
+      details summary:hover {
+        background: #f0f0f0;
+      }
+      
+      @media print, screen and (max-width: 960px) {
+        header {
+          width: auto;
+          position: relative;
+          padding-right: 0;
+        }
+        
+        section {
+          width: auto;
+          max-width: 100%;
+        }
+        
+        nav ul li a {
+          display: inline-block;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <nav>
+          <ul>
+            {% for item in site.navigation %}
+            <li>
+              <a href="{{ item.url | relative_url }}" 
+                 {% if page.url == item.url %}class="active"{% endif %}>
+                {{ item.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+
+        <p class="view">
+          <a href="https://github.com/CE-QUAL-W2-ERDC/CE-QUAL-W2">View on GitHub</a>
+        </p>
+
+        <p>
+          <small>Developed by<br>
+          U.S. Army Corps of Engineers<br>
+          &amp;<br>
+          Portland State University</small>
+        </p>
+      </header>
+      
+      <section>
+        {{ content }}
+      </section>
+      
+      <footer>
+        <p><small>CE-QUAL-W2 is public domain software</small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
