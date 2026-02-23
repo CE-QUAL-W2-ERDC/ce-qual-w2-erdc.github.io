@@ -22,12 +22,12 @@ Both versions share the same preprocessor and input file formats. See [HAB Model
 
 Download the appropriate executable for your operating system:
 
-| Platform | Version | Download                                                      | Size   | Requirements           |
-| -------- | ------- | ------------------------------------------------------------- | ------ | ---------------------- |
-| Windows  | v2006   | [w2_v2006.02_win64.exe](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_win_x64.exe) | 16.7 MB | Windows 10/11 (64-bit) |
-| Linux    | v2006   | [w2_v2006.02_linux](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_linux)           | 10.8 MB | gfortran libraries     |
-| macOS    | v2006   | [w2_v2006.02_macOS](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_macos)           | 10.8 MB | macOS 26.1+            |
-| Windows  | v4.5    | [w2_v45_win64.exe](/executables/w2_v45_64.exe)                 | 6.5 MB | Windows 10/11 (64-bit) |
+| Platform | Version    | Download                                                                                   | Size    | Requirements           |
+| -------- | ---------- | ------------------------------------------------------------------------------------------ | ------- | ---------------------- |
+| Windows  | ERDC v2006 | [w2_v2006.02_win64.exe](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_win_x64.exe) | 16.7 MB | Windows 10/11 (64-bit) |
+| Linux    | ERDC v2006 | [w2_v2006.02_linux](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_linux)           | 10.8 MB | gfortran libraries     |
+| macOS    | ERDC v2006 | [w2_v2006.02_macOS](/executables/ERDC_CE-QUAL-W2_v2026.02/w2_2026.02_erdc_macos)           | 10.8 MB | macOS 26.1+            |
+| Windows  | PSU v4.5   | [w2_v45_win64.exe](/executables/PSU_CE-QUAL-W2_v45_x64/w2_v45_64.exe)                      | 6.5 MB  | Windows 10/11 (64-bit) |
 
 
 **Note:** ERDC's CE-QUAL-W2 Version 2006 has new capabilities for Harmful Algal Bloom (HAB) simulations.
@@ -36,21 +36,21 @@ Download the appropriate executable for your operating system:
 
 Download the appropriate executable for your operating system:
 
-| Platform    | Version | Download                                         | Size   | Requirements           |
-| ----------- | ------- | ------------------------------------------------ | ------ | ---------------------- |
+| Platform    | Version | Download                                          | Size   | Requirements           |
+| ----------- | ------- | ------------------------------------------------- | ------ | ---------------------- |
 | **Windows** | v4.5    | [preW2-v45_64.exe](/executables/preW2-v45_64.exe) | 9.6 MB | Windows 10/11 (64-bit) |
 
 ### Source Code
 
-| Item                     |                                                            |
-| ------------------------ | ---------------------------------------------------------- |
+| Item                     |                                                             |
+| ------------------------ | ----------------------------------------------------------- |
 | CE-QUAL-W2 model         | [w2source_7_7_2025.zip](/src/w2source_7_7_2025.zip)         |
 | CE-QUAL-W2 pre-processor | [PreW2_source_July2025.zip](/src/PreW2_source_July2025.zip) |
 
 ### Documentation
 
-| Document                   | Description                 | Download                                                             |
-| -------------------------- | --------------------------- | -------------------------------------------------------------------- |
+| Document                   | Description                 | Download                                                              |
+| -------------------------- | --------------------------- | --------------------------------------------------------------------- |
 | **Part 1: Introduction**   | Getting started guide       | [Download](/documentation/W2manual45_Part1_Intro_rev9.pdf)            |
 | **Part 2: Theory**         | Model theory and equations  | [Download](/documentation/W2manual45_Part2_Theory_rev8.pdf)           |
 | **Part 3: Input/Output**   | File formats and parameters | [Download](/documentation/W2manual45_Part3_InputOutputFiles_rev8.pdf) |
