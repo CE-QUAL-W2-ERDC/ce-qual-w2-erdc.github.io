@@ -64,7 +64,7 @@ Scott, J.T., M.J. McCarthy, and H.W. Paerl. 2019. Nitrogen transformations diffe
 
 Soballe, D.M. and B.L. Kimmel. 1987. A large-scale comparison of factors influencing phytoplankton abundance in rivers, lakes, and impoundments. *Ecology* 68(6):1943&ndash;1954.
 
-Summers, H.M. and E. Ryder. 2023. A review of lake management tactics for harmful algal blooms mitigation. U.S. Army Engineer Research and Development Center, Vicksburg, MS.
+Summers, E.J. and J.L. Ryder. 2023. A review of lake management tactics for harmful algal blooms mitigation. U.S. Army Engineer Research and Development Center, Vicksburg, MS.
 
 Vermeyen, T.B. 2000. Application of flexible curtains to control mixing and enable selective withdrawal in reservoirs. *Proceedings of the 5th International Symposium on Stratified Flows,* Vancouver, BC.
 
