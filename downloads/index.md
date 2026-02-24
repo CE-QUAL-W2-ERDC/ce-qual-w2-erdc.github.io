@@ -92,10 +92,4 @@ Downloadable model applications are available on the [Examples](/examples/) page
 - **Processor**: Multi-core for parallel processing
 - **Storage**: SSD for faster I/O operations
 
-## Credit
-
-Please cite CE-QUAL-W2 in publications as:
-
-> Cole, T.M., and Wells, S.A. (2023). "CE-QUAL-W2: A Two-Dimensional, Laterally Averaged, Hydrodynamic and Water Quality Model, Version 4.5." U.S. Army Engineer Research and Development Center, Vicksburg, MS.
-
 *Last updated: February 2026*
