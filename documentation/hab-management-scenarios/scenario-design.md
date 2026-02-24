@@ -4,6 +4,8 @@ title: "Designing and Evaluating Model Scenarios"
 permalink: /hab-modeling/hab-management-scenarios/scenario-design/
 ---
 
+{% include section-nav.html section="hab-management-scenarios" %}
+
 # Designing and Evaluating Model Scenarios
 
 Numerical scenario analysis provides a structured means of quantifying how a proposed management action would alter harmful algal bloom (HAB) dynamics relative to current conditions. In this context, a scenario is defined as a CE-QUAL-W2 simulation in which one or more boundary conditions, structural features, or operational rules have been modified from the calibrated baseline. By comparing scenario and baseline outputs, modelers can isolate the expected effect of each intervention on bloom intensity, duration, spatial extent, and downstream water quality.
@@ -75,6 +77,3 @@ The intermediate disturbance hypothesis offers additional guidance for pulsed-in
 
 Schmidt stability quantifies the mechanical energy per unit surface area (J/m^2) required to mix the entire water column to uniform density. Higher values indicate stronger thermal stratification and greater resistance to mixing. Comparing Schmidt stability between baseline and scenario simulations provides a quantitative measure of how effectively a mixing or destratification strategy disrupts the stratified conditions that favor buoyant cyanobacteria (Visser et al. 2016).
 
----
-
-[&larr; CE-QUAL-W2 Capabilities](model-capabilities.md) | [Next: Strategies Not Directly Simulable &rarr;](other-strategies.md)

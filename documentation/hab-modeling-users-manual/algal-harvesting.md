@@ -4,6 +4,8 @@ title: "Algal Harvesting - User Manual"
 permalink: /hab-modeling/algal-harvesting/
 ---
 
+{% include section-nav.html section="hab-users-manual" %}
+
 # Chapter 3: Algal Harvesting
 
 ## Purpose
@@ -128,7 +130,4 @@ Note that `Event_Mass_kg` and `Cumulative_Mass_kg` report totals across all alga
 - Harvesting applied: `update.F90` ~lines 96-145
 - Mass output file opened: `init.F90` ~lines 134-137
 
----
-
-[Previous: Chapter 1 - Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | [Next: Chapter 3 - Minimum Algae](/hab-modeling/minimum-algae/)
 

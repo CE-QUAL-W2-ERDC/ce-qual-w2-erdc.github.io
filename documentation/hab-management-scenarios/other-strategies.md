@@ -4,6 +4,8 @@ title: "Strategies Not Directly Simulable"
 permalink: /hab-modeling/hab-management-scenarios/other-strategies/
 ---
 
+{% include section-nav.html section="hab-management-scenarios" %}
+
 # Strategies Not Directly Simulable in CE-QUAL-W2
 
 Several widely discussed Harmful Algal Bloom (HAB) management strategies target chemical, biological, or physical processes that lie outside the computational framework of CE-QUAL-W2. Because the model solves laterally averaged conservation equations for momentum, heat, and constituent mass, it cannot represent processes such as algaecide pharmacokinetics, sediment amendment geochemistry, or photocatalytic cell destruction that operate through mechanisms not included in the governing equations. Nonetheless, modelers may wish to bound the potential water quality benefits of these strategies within a scenario analysis framework. Table 8 summarizes each strategy, explains why it cannot be simulated directly, and identifies boundary condition adjustments that can serve as approximate workarounds.
@@ -24,6 +26,3 @@ Workaround scenarios do not simulate the mechanism of a given strategy; rather, 
 | Riparian vegetation management | Nearshore shading by overhanging canopy combined with nutrient filtration through root-zone biogeochemistry | Watershed-scale terrestrial processes (canopy shading geometry, root-zone denitrification, and sediment trapping) operate outside the model domain | Modify the light extinction coefficient for nearshore segments and reduce tributary nutrient concentrations to reflect riparian buffer performance |
 | Floating solar photovoltaics | Reduction of incident PAR by panel arrays covering a fraction of the water surface | Same limitation as physical shading: the model does not support spatially variable surface radiation within a segment | Reduce the surface solar radiation input proportionally to panel coverage area and transmittance |
 
----
-
-[&larr; Scenario Design](scenario-design.md) | [Next: References &rarr;](references.md)

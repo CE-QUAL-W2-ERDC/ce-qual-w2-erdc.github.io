@@ -4,6 +4,8 @@ title: "Operational Management Strategies"
 permalink: /hab-modeling/hab-management-scenarios/strategies/
 ---
 
+{% include section-nav.html section="hab-management-scenarios" %}
+
 # Operational Management Strategies
 
 This section catalogs eight operational strategies for managing cyanobacterial blooms in reservoirs and lakes. The first six are hydrodynamic strategies that manipulate water movement, stratification, or storage to alter conditions governing bloom development. The remaining two address nutrient supply and direct biomass removal. The synthesis draws primarily from Summers and Ryder (2023) and the references cited therein. Table 3 at the end of this section provides a side-by-side comparison of the six hydrodynamic strategies.
@@ -58,6 +60,3 @@ Table 3 provides a side-by-side comparison of the six hydrodynamic management st
 | Time scale | Seasonal to multi-year | Days to weeks | Days to weeks | Continuous | Seasonal | Seasonal |
 | Best system type | Deep, stratified with legacy P | Seasonal surface blooms | Riverine reservoirs | Deep (>15 m) | Flexible operations | Selective withdrawal sites |
 
----
-
-[&larr; Factors Controlling HAB Development](factors.md) | [Next: CE-QUAL-W2 Capabilities &rarr;](model-capabilities.md)

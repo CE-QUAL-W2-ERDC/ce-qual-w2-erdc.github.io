@@ -4,6 +4,8 @@ title: "Minimum Algae (Seed Population) - User Manual"
 permalink: /hab-modeling/minimum-algae/
 ---
 
+{% include section-nav.html section="hab-users-manual" %}
+
 # Chapter 1: Minimum Algae (Seed Population)
 
 ## Purpose
@@ -39,7 +41,4 @@ The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also cont
 - Read: `input.F90` ~line 2317
 - Applied: `update.F90` ~line 120
 
----
-
-[Previous: Chapter 2 - Algal Harvesting](/hab-modeling/algal-harvesting/) | [Next: Chapter 4 - Low DO Mortality](/hab-modeling/low-do-mortality/)
 

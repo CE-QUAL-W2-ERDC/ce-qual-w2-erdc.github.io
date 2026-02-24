@@ -4,6 +4,8 @@ title: "Factors Controlling HAB Development"
 permalink: /hab-modeling/hab-management-scenarios/factors/
 ---
 
+{% include section-nav.html section="hab-management-scenarios" %}
+
 # Factors Controlling HAB Development
 
 Cyanobacterial harmful algal blooms (HABs) arise from the convergence of physical, chemical, and biological conditions that selectively favor cyanobacteria over competing phytoplankton. Identifying which factors are most influential in a given system is a prerequisite both for selecting effective management interventions and for configuring numerical models to evaluate those interventions. The synthesis presented here draws primarily from the review by Summers and Ryder (2023, Section 3) and the references cited therein.
@@ -61,6 +63,3 @@ Hydraulic residence time integrates the effects of inflow, outflow, and storage 
 
 Pulsed flow disturbances offer an additional management lever. Padisak et al. (1999) reported that flow pulses applied every 20--30 days at rates equivalent to 1--2% of reservoir volume per day were sufficient to shift phytoplankton dominance away from cyanobacteria, consistent with predictions of the intermediate disturbance hypothesis. These findings suggest that even modest flow augmentation, if timed to coincide with early bloom development, can meaningfully reduce bloom severity without requiring sustained high-flow releases.
 
----
-
-[&larr; Introduction](index.md) | [Next: Operational Management Strategies &rarr;](strategies.md)

@@ -4,6 +4,8 @@ title: "Nitrogen Fixation - User Manual"
 permalink: /hab-modeling/nitrogen-fixation/
 ---
 
+{% include section-nav.html section="hab-users-manual" %}
+
 # Chapter 4: Nitrogen Fixation
 
 ## Purpose
@@ -61,7 +63,4 @@ In this example with 3 algal groups, only group 3 (e.g., a cyanobacteria) fixes 
 - NH₄ uptake suppression: `water-quality.f90` ~line 1512
 - NO₃ uptake suppression: `water-quality.f90` ~line 1586
 
----
-
-[Previous: User Manual Overview](/hab-modeling/) | [Next: Chapter 2 - Algal Harvesting](/hab-modeling/algal-harvesting/)
 

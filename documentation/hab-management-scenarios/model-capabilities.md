@@ -4,6 +4,8 @@ title: "CE-QUAL-W2 Capabilities for HAB Assessment"
 permalink: /hab-modeling/hab-management-scenarios/model-capabilities/
 ---
 
+{% include section-nav.html section="hab-management-scenarios" %}
+
 # CE-QUAL-W2 Capabilities for HAB Assessment
 
 CE-QUAL-W2 provides a comprehensive framework for simulating the physical, chemical, and biological processes that govern cyanobacterial bloom dynamics in reservoirs and lakes. The model resolves hydrodynamic transport, nutrient cycling, and algal growth at scales relevant to operational decision-making (Cole and Wells 2023). ERDC's Version 2026, built on PSU's Version 4.5, introduced four features specifically designed for HAB applications, extending the model's capacity to represent key cyanobacterial traits and management interventions. This page describes the core and HAB-specific capabilities most relevant to scenario evaluation.
@@ -71,6 +73,3 @@ Table 5 identifies the CE-QUAL-W2 features used to represent each management str
 | Algal harvesting | Harvesting module (ERDC Version 2026) | Specify removal rate, spatial extent, and timing |
 | Toxin fate assessment | Algae toxin tracking module (Version 4.5) | Enable toxin constituents; specify production and decay rates per algal group |
 
----
-
-[&larr; Operational Management Strategies](strategies.md) | [Next: Scenario Design &rarr;](scenario-design.md)

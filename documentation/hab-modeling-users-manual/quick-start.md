@@ -4,6 +4,8 @@ title: "Quick Start Guide - User Manual"
 permalink: /hab-modeling/quick-start/
 ---
 
+{% include section-nav.html section="hab-users-manual" %}
+
 # Quick Start Guide
 
 To enable any combination of HAB features, copy the relevant CSV file(s) into your model run directory (the same directory containing `w2_con.npt` or `w2_con.csv`):
@@ -38,7 +40,4 @@ To disable a feature, simply remove (or rename) its input file from the run dire
 | [3. Algal Harvesting](/hab-modeling/algal-harvesting/) | Scheduled algal removal |
 | [4. Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | Atmospheric N₂ fixation |
 
----
-
-[Previous: Chapter 4 - Low DO Mortality](/hab-modeling/low-do-mortality/) | [User Manual Overview](/hab-modeling/)
 

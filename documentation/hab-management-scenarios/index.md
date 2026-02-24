@@ -32,6 +32,13 @@ Managers will find the most relevant material on the [Factors Controlling HAB De
 
 Both audiences should consult the [Strategies Not Directly Simulable](other-strategies.md) page, which identifies management approaches that fall outside the model's process representation and discusses possible boundary-condition workarounds where approximate evaluation may still be feasible.
 
----
+## Contents
 
-[Next: Factors Controlling HAB Development &rarr;](factors.md)
+| Page | Description |
+|------|-------------|
+| [Factors Controlling HAB Development](factors.md) | Physical, chemical, and biological drivers of cyanobacterial blooms |
+| [Operational Management Strategies](strategies.md) | Eight intervention approaches with mechanisms, applicability, and limitations |
+| [CE-QUAL-W2 Capabilities](model-capabilities.md) | Core and HAB-specific model features for scenario evaluation |
+| [Designing and Evaluating Model Scenarios](scenario-design.md) | Baseline development, scenario construction, and output interpretation |
+| [Strategies Not Directly Simulable](other-strategies.md) | Approaches outside the model's process representation with workarounds |
+| [References](references.md) | Full reference list |

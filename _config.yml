@@ -36,6 +36,40 @@ navigation:
   - title: Support
     url: /support/
 
+# Section navigation (ordered page lists for multi-page documentation sections)
+sections:
+  hab-management-scenarios:
+    title: "HAB Management Scenarios"
+    index: /hab-modeling/hab-management-scenarios/
+    pages:
+      - title: "Factors Controlling HAB Development"
+        url: /hab-modeling/hab-management-scenarios/factors/
+      - title: "Operational Management Strategies"
+        url: /hab-modeling/hab-management-scenarios/strategies/
+      - title: "CE-QUAL-W2 Capabilities"
+        url: /hab-modeling/hab-management-scenarios/model-capabilities/
+      - title: "Designing and Evaluating Model Scenarios"
+        url: /hab-modeling/hab-management-scenarios/scenario-design/
+      - title: "Strategies Not Directly Simulable"
+        url: /hab-modeling/hab-management-scenarios/other-strategies/
+      - title: "References"
+        url: /hab-modeling/hab-management-scenarios/references/
+
+  hab-users-manual:
+    title: "HAB Features User's Manual"
+    index: /hab-modeling/
+    pages:
+      - title: "Ch 1: Nitrogen Fixation"
+        url: /hab-modeling/nitrogen-fixation/
+      - title: "Ch 2: Algal Harvesting"
+        url: /hab-modeling/algal-harvesting/
+      - title: "Ch 3: Minimum Algae (Seed Population)"
+        url: /hab-modeling/minimum-algae/
+      - title: "Ch 4: Low DO Mortality"
+        url: /hab-modeling/low-do-mortality/
+      - title: "Quick Start Guide"
+        url: /hab-modeling/quick-start/
+
 # Build settings
 markdown: kramdown
 

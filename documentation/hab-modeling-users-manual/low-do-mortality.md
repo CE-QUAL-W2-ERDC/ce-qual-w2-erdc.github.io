@@ -4,6 +4,8 @@ title: "Low DO Mortality - User Manual"
 permalink: /hab-modeling/low-do-mortality/
 ---
 
+{% include section-nav.html section="hab-users-manual" %}
+
 # Chapter 2: Low DO Mortality (Hypoxic Conditions)
 
 ## Purpose
@@ -99,7 +101,4 @@ In this example with 3 algal groups:
 - DO tracking: `water-quality.f90` ~lines 302-307
 - Mortality override: `water-quality.f90` ~line 704
 
----
-
-[Previous: Chapter 3 - Minimum Algae](/hab-modeling/minimum-algae/) | [Next: Quick Start Guide](/hab-modeling/quick-start/)
 

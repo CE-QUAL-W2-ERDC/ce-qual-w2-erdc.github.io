@@ -4,6 +4,8 @@ title: "References - HAB Management Scenarios"
 permalink: /hab-modeling/hab-management-scenarios/references/
 ---
 
+{% include section-nav.html section="hab-management-scenarios" %}
+
 # References
 
 Bormans, M., P.W. Ford, and L. Fabbro. 1997. Spatial and temporal variability in cyanobacterial populations controlled by physical processes. *Journal of Plankton Research* 19(1):61&ndash;75.
@@ -78,6 +80,3 @@ Xiao, M., A. Willis, and M.A. Burford. 2017. Differences in cyanobacterial strai
 
 Zhang, M., Y. Zhang, Z. Yang, L. Wei, W. Yang, C. Chen, and F. Kong. 2021. Spatial and seasonal shifts in bloom-forming cyanobacteria in Lake Chaohu: patterns and driving factors. *Phycological Research* 64(1):44&ndash;55.
 
----
-
-[&larr; Strategies Not Directly Simulable](other-strategies.md) | [HAB Management Scenarios Overview](index.md)

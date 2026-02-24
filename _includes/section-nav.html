@@ -1,0 +1,36 @@
+{% assign sec = site.sections[include.section] %}
+{% if sec %}
+<div class="section-nav">
+  <div class="section-nav-title">
+    <a href="{{ sec.index | relative_url }}">{{ sec.title }}</a>
+  </div>
+  <ol class="section-nav-pages">
+    {% for pg in sec.pages %}
+    <li{% if page.url == pg.url %} class="current"{% endif %}>
+      {% if page.url == pg.url %}
+        {{ pg.title }}
+      {% else %}
+        <a href="{{ pg.url | relative_url }}">{{ pg.title }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  <div class="section-nav-prevnext">
+    {% for pg in sec.pages %}
+      {% if page.url == pg.url %}
+        {% assign idx = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+    {% if idx == 0 %}
+      <a href="{{ sec.index | relative_url }}">&larr; {{ sec.title }}</a>
+    {% else %}
+      {% assign prev_idx = idx | minus: 1 %}
+      <a href="{{ sec.pages[prev_idx].url | relative_url }}">&larr; {{ sec.pages[prev_idx].title }}</a>
+    {% endif %}
+    {% assign next_idx = idx | plus: 1 %}
+    {% if next_idx < sec.pages.size %}
+      <a href="{{ sec.pages[next_idx].url | relative_url }}" class="section-nav-next">{{ sec.pages[next_idx].title }} &rarr;</a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
