@@ -60,3 +60,5 @@ Table 3 provides a side-by-side comparison of the six hydrodynamic management st
 | Time scale | Seasonal to multi-year | Days to weeks | Days to weeks | Continuous | Seasonal | Seasonal |
 | Best system type | Deep, stratified with legacy P | Seasonal surface blooms | Riverine reservoirs | Deep (>15 m) | Flexible operations | Selective withdrawal sites |
 
+{% include section-nav-bottom.html section="hab-management-scenarios" %}
+

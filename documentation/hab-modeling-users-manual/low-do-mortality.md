@@ -101,4 +101,6 @@ In this example with 3 algal groups:
 - DO tracking: `water-quality.f90` ~lines 302-307
 - Mortality override: `water-quality.f90` ~line 704
 
+{% include section-nav-bottom.html section="hab-users-manual" %}
+
 

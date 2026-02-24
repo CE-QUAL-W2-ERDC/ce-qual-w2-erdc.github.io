@@ -80,3 +80,5 @@ Xiao, M., A. Willis, and M.A. Burford. 2017. Differences in cyanobacterial strai
 
 Zhang, M., Y. Zhang, Z. Yang, L. Wei, W. Yang, C. Chen, and F. Kong. 2021. Spatial and seasonal shifts in bloom-forming cyanobacteria in Lake Chaohu: patterns and driving factors. *Phycological Research* 64(1):44&ndash;55.
 
+{% include section-nav-bottom.html section="hab-management-scenarios" %}
+

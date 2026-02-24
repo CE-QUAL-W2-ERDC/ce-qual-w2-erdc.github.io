@@ -40,4 +40,6 @@ To disable a feature, simply remove (or rename) its input file from the run dire
 | [3. Algal Harvesting](/hab-modeling/algal-harvesting/) | Scheduled algal removal |
 | [4. Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | Atmospheric N₂ fixation |
 
+{% include section-nav-bottom.html section="hab-users-manual" %}
+
 

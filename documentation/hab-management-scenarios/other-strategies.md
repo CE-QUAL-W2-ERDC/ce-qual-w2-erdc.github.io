@@ -26,3 +26,5 @@ Workaround scenarios do not simulate the mechanism of a given strategy; rather, 
 | Riparian vegetation management | Nearshore shading by overhanging canopy combined with nutrient filtration through root-zone biogeochemistry | Watershed-scale terrestrial processes (canopy shading geometry, root-zone denitrification, and sediment trapping) operate outside the model domain | Modify the light extinction coefficient for nearshore segments and reduce tributary nutrient concentrations to reflect riparian buffer performance |
 | Floating solar photovoltaics | Reduction of incident PAR by panel arrays covering a fraction of the water surface | Same limitation as physical shading: the model does not support spatially variable surface radiation within a segment | Reduce the surface solar radiation input proportionally to panel coverage area and transmittance |
 
+{% include section-nav-bottom.html section="hab-management-scenarios" %}
+

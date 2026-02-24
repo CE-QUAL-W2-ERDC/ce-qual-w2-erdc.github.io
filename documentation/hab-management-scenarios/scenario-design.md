@@ -77,3 +77,5 @@ The intermediate disturbance hypothesis offers additional guidance for pulsed-in
 
 Schmidt stability quantifies the mechanical energy per unit surface area (J/m^2) required to mix the entire water column to uniform density. Higher values indicate stronger thermal stratification and greater resistance to mixing. Comparing Schmidt stability between baseline and scenario simulations provides a quantitative measure of how effectively a mixing or destratification strategy disrupts the stratified conditions that favor buoyant cyanobacteria (Visser et al. 2016).
 
+{% include section-nav-bottom.html section="hab-management-scenarios" %}
+

@@ -41,4 +41,6 @@ The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also cont
 - Read: `input.F90` ~line 2317
 - Applied: `update.F90` ~line 120
 
+{% include section-nav-bottom.html section="hab-users-manual" %}
+
 

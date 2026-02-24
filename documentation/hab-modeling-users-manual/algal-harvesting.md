@@ -130,4 +130,6 @@ Note that `Event_Mass_kg` and `Cumulative_Mass_kg` report totals across all alga
 - Harvesting applied: `update.F90` ~lines 96-145
 - Mass output file opened: `init.F90` ~lines 134-137
 
+{% include section-nav-bottom.html section="hab-users-manual" %}
+
 

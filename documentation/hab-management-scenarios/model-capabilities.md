@@ -73,3 +73,5 @@ Table 5 identifies the CE-QUAL-W2 features used to represent each management str
 | Algal harvesting | Harvesting module (ERDC Version 2026) | Specify removal rate, spatial extent, and timing |
 | Toxin fate assessment | Algae toxin tracking module (Version 4.5) | Enable toxin constituents; specify production and decay rates per algal group |
 
+{% include section-nav-bottom.html section="hab-management-scenarios" %}
+

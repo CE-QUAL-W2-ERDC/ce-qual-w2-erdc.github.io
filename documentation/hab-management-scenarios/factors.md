@@ -63,3 +63,5 @@ Hydraulic residence time integrates the effects of inflow, outflow, and storage 
 
 Pulsed flow disturbances offer an additional management lever. Padisak et al. (1999) reported that flow pulses applied every 20--30 days at rates equivalent to 1--2% of reservoir volume per day were sufficient to shift phytoplankton dominance away from cyanobacteria, consistent with predictions of the intermediate disturbance hypothesis. These findings suggest that even modest flow augmentation, if timed to coincide with early bloom development, can meaningfully reduce bloom severity without requiring sustained high-flow releases.
 
+{% include section-nav-bottom.html section="hab-management-scenarios" %}
+

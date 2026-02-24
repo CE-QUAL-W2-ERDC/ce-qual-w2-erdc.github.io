@@ -63,4 +63,6 @@ In this example with 3 algal groups, only group 3 (e.g., a cyanobacteria) fixes 
 - NH₄ uptake suppression: `water-quality.f90` ~line 1512
 - NO₃ uptake suppression: `water-quality.f90` ~line 1586
 
+{% include section-nav-bottom.html section="hab-users-manual" %}
+
 
