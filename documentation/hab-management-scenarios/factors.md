@@ -17,7 +17,7 @@ Table 1 summarizes the major environmental factors that govern cyanobacterial bl
 | Factor | Favorable for Blooms | Unfavorable for Blooms | Key References |
 |--------|---------------------|----------------------|----------------|
 | Thermal stratification | Strong, persistent | Weak or absent | Dantas et al. 2011; Bormans et al. 1997 |
-| Water temperature | High (>25 &deg;C) | Low (<20 &deg;C) | Nalewajko and Murphy 2001; Xiao et al. 2017 |
+| Water temperature | High (>25 &deg;C) | Low (<15 &deg;C), though cold-water blooms do occur | Nalewajko and Murphy 2001; Xiao et al. 2017 |
 | Residence time | Long | Short | Soballe and Kimmel 1987; Padisak et al. 1999 |
 | Flow velocity | Low (<0.05 m/s) | High (>0.05 m/s) | Mitrovic et al. 2003, 2011 |
 | Wind speed | Low (\<3 m/s) | High (>3 m/s) | Zhang et al. 2021; Cao et al. 2011 |
@@ -26,6 +26,7 @@ Table 1 summarizes the major environmental factors that govern cyanobacterial bl
 | Light availability | High surface irradiance | Low irradiance or high turbidity | Islam and Beardall 2017; Dou et al. 2019 |
 | Water depth | Shallow (<15 m mixed depth) | Deep (>15 m, enables mixing strategies) | Visser et al. 2016 |
 | Water level | Low or declining | High or stable | Xia et al. 2020; Jeppesen et al. 2015 |
+| Hypolimnetic DO | Low (anoxic, drives internal P loading) | High (oxic, suppresses sediment P release) | Nurnberg 2009 |
 
 ## Stratification and Mixing
 
@@ -53,9 +54,13 @@ Table 2 presents a decision framework for nutrient management, adapted from the 
 
 ## Temperature and Light
 
-Water temperature directly governs phytoplankton growth rates, and many bloom-forming cyanobacteria possess growth optima above 25 &deg;C, which exceed those of most eukaryotic algae (Nalewajko and Murphy 2001; Robarts and Zohary 1987). This physiological trait gives cyanobacteria a competitive advantage during warm periods, particularly in systems where summer surface temperatures consistently exceed 25 &deg;C. Warming also strengthens thermal stratification indirectly, reinforcing the buoyancy-mediated competitive advantage described in the preceding section.
+Water temperature directly governs phytoplankton growth rates, and many bloom-forming cyanobacteria possess growth optima above 25 &deg;C, which exceed those of most eukaryotic algae (Nalewajko and Murphy 2001; Robarts and Zohary 1987). This physiological trait gives cyanobacteria a competitive advantage during warm periods, particularly in systems where summer surface temperatures consistently exceed 25 &deg;C. Warming also strengthens thermal stratification indirectly, reinforcing the buoyancy-mediated competitive advantage described in the preceding section. However, cold temperatures do not categorically prevent cyanobacterial blooms. Some species, notably *Aphanizomenon flos-aquae* and certain *Planktothrix* strains, can initiate blooms in cold water (below 15 &deg;C) and even under ice cover in oligotrophic to mesotrophic lakes.
 
 Light availability interacts with buoyancy regulation to determine community composition. In clear, stratified waters, buoyant cyanobacteria can monopolize the high-irradiance surface zone, photosynthesizing at rates that non-motile competitors cannot match. In turbid or well-mixed systems, non-buoyant taxa that tolerate variable light regimes may be more competitive (Islam and Beardall 2017). The coupling of temperature, stratification, and light therefore creates a positive feedback loop: warm conditions strengthen stratification, which stabilizes the water column, which in turn allows buoyant cyanobacteria to dominate the photic zone.
+
+## Dissolved Oxygen and Internal Loading
+
+Dissolved oxygen (DO) conditions in the hypolimnion exert a strong indirect control on bloom dynamics through their effect on internal nutrient loading. When DO is depleted at the sediment-water interface, the reduction of iron oxyhydroxides releases adsorbed phosphorus into the water column, and denitrification removes nitrogen from the system (Nurnberg 2009). This internal phosphorus loading can sustain elevated water-column nutrient concentrations and prolong blooms long after external loads have been reduced. A positive feedback loop can develop: bloom decomposition consumes oxygen, which drives hypolimnetic anoxia, which triggers additional phosphorus release, which fuels subsequent blooms. CE-QUAL-W2 represents this feedback through its sediment diagenesis module, which computes sediment oxygen demand and nutrient fluxes as a function of temperature, redox conditions, and organic matter deposition.
 
 ## Residence Time and Flow
 

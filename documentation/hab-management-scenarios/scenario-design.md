@@ -30,6 +30,7 @@ Table 6 provides a structured guide for configuring scenarios for each of the ei
 | Horizontal flushing | Surface outlet release rates | Flushing rate, duration, trigger threshold | Surface Chl-a, biomass export, residence time, downstream temperature |
 | Pulsed inflows | Upstream inflow time series | Pulse magnitude, duration, frequency, timing relative to bloom onset | Stratification strength, Chl-a, flow velocity, turbidity |
 | Artificial mixing | Vertical mixing representation | Mixing intensity, depth of influence, areal coverage, operating schedule | Mixed-layer depth, Chl-a by algal group, DO profile |
+| Hypolimnetic aeration | Aeration module parameters | O2 mass delivery rate, layer range, timing, DO probe thresholds | Hypolimnetic DO, sediment P flux, surface TP, Chl-a, thermocline depth |
 | Water level management | Outflows to achieve target elevations | Target pool elevations, drawdown rate, timing | Water surface elevation, Chl-a, light climate, littoral zone exposure |
 | Temperature control curtain | Internal curtain structure | Curtain depth, longitudinal location, seasonal deployment period | Outflow temperature, thermocline depth, Chl-a, DO |
 | Nutrient load reduction | Inflow nutrient concentrations | Percent reduction in TP, TN, or both; N:P ratio | Chl-a, TP, TN, algal group composition |
@@ -51,13 +52,16 @@ Table 7 lists recommended performance metrics, the information each provides, an
 | Peak surface Chl-a (ug/L) | Maximum bloom intensity | All |
 | Bloom duration (days above threshold) | Temporal persistence of HAB conditions | All |
 | Bloom volume (m^3 above threshold) | Spatial extent and severity of bloom | All |
-| Thermocline depth (m) | Stratification state and mixed-layer response | Mixing, pulsed inflows, withdrawals |
+| Habitat volume (m^3 or % meeting criteria) | Volume of water meeting user-defined temperature and DO criteria | Aeration, mixing, withdrawals |
+| Thermocline depth (m) | Stratification state and mixed-layer response | Mixing, pulsed inflows, withdrawals, aeration |
 | Schmidt stability (J/m^2) | Resistance of water column to mixing | Mixing, pulsed inflows |
 | Hydraulic residence time (days) | Rate of water replacement | Flushing, pulsed inflows |
-| Surface TP, TN (mg/L) | Nutrient availability in the photic zone | Withdrawals, nutrient reduction |
+| Surface TP, TN (mg/L) | Nutrient availability in the photic zone | Withdrawals, aeration, nutrient reduction |
 | Hypolimnetic DO (mg/L) | Bottom-water oxygen conditions | Withdrawals, aeration, mixing |
+| Sediment P flux (mg/m^2/day) | Internal phosphorus loading from bottom sediments | Aeration, withdrawals, water level management |
 | Algal group composition (%) | Community shift toward or away from cyanobacteria | Mixing, nutrient reduction |
 | Outflow quality (temperature, DO, nutrients) | Downstream impact of the management action | Withdrawals, flushing, curtains |
+| Intracellular toxin concentration (ug/L) | Cell-bound cyanotoxin levels | All strategies that affect algal biomass |
 | Extracellular toxin concentration (ug/L) | Dissolved cyanotoxin levels at intakes or recreation sites | Harvesting, flushing, chemical treatment workarounds |
 | Cumulative harvested biomass (kg) | Total biomass removed across harvesting events | Algal harvesting |
 
