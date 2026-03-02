@@ -38,6 +38,8 @@ Jhingran, V.G. 1991. *Fish and Fisheries of India.* Hindustan Publishing Corpora
 
 Lehman, J.T. 2014. Understanding the role of induced mixing for management of nuisance algal blooms in an impoundment. *Lake and Reservoir Management* 30(1):63&ndash;72.
 
+Mantzouki, E., M. Lurling, J. Fastner, L. de Senerpont Domis, E. Wilk-Wozniak, J. Koreiviene, L. Seelen, S. Teurlincx, Y. Verstijnen, W. Krzton, E. Walusiak, J. Karosiene, J. Kasperoviciene, K. Savadova, I. Vitonyte, C. Cillero-Castro, A. Budzynska, R. Goldyn, A. Kozak, J. Rosinska, E. Szelag-Wasielewska, P. Domek, N. Jakubowska-Krepska, K. Kwasizur, B. Messyasz, A. Pelechata, M. Pelechaty, M. Kokocinski, B. Garcia-Murcia, M. Real, E. Romans, J. Noguero-Ribes, D.P. Hamilton, C. Salmaso, G. Cerasino, J. Obertegger, A. Flaim, M.G. Salmaso, and B.W. Ibelings. 2018. Temperature effects explain continental scale distribution of cyanobacterial toxins. *Toxins* 10(4):156.
+
 Matthijs, H.C.P., P.M. Visser, B. Reeze, J. Meeuse, P.C. Slot, B.W. Ibelings, G. Wijn, and R. Groenewoud. 2012. Selective suppression of harmful cyanobacteria in an entire lake with hydrogen peroxide. *Water Research* 46(5):1460&ndash;1472.
 
 Mitrovic, S.M., R.L. Oliver, C. Rees, L.C. Bowling, and R.T. Buckney. 2003. Critical flow velocities for the growth and dominance of *Anabaena circinalis* in some turbid freshwater rivers. *Freshwater Biology* 48(1):164&ndash;174.
@@ -55,6 +57,8 @@ Padisak, J., G. Borics, G. Feher, I. Grigorszky, Z. Oldal, A. Schmidt, and Z. Za
 Paerl, H.W. and J. Huisman. 2008. Blooms like it hot. *Science* 320(5872):57&ndash;58.
 
 Paerl, H.W., W.S. Gardner, K.E. Havens, A.R. Joyner, M.J. McCarthy, S.E. Newell, B. Qin, and J.T. Scott. 2016. Mitigating cyanobacterial harmful algal blooms in aquatic ecosystems impacted by climate change and anthropogenic nutrients. *Harmful Algae* 54:213&ndash;222.
+
+Reinl, K.L., T.D. Harris, R.L. North, P. Almela, S. Berger, C. Bizic, S.J. Burnet, J.A. Grossart, B.W. Ibelings, E. Jakobsson, L.B. Knoll, B.M. Laas, E.B. Mackay, M.S. Milstead, B. Obrador, L.B. Padisak, S.E. Taranu, and H.A. Vieira. 2023. Flipping the script: cyanobacteria blooms in ice-covered lakes. *Water Research* 242:120291.
 
 Reynolds, C.S. 2006. *The Ecology of Phytoplankton.* Cambridge University Press, Cambridge, UK.
 
