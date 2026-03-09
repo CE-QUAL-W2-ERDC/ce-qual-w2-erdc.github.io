@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "HAB Features User Manual"
+title: "CE-QUAL-W2 Harmful Algal Bloom Modeling User's Manual"
 permalink: /hab-modeling/
 ---
 
-# CE-QUAL-W2 HAB Features User's Manual
+# CE-QUAL-W2 Harmful Algal Bloom User's Manual
 
 ## Overview
 
@@ -19,23 +19,20 @@ All four features use **file-existence-based activation**. None are controlled b
 
 ## Chapters
 
-| Chapter | Feature | Input File(s) |
-|---------|---------|----------------|
-| [1. Nitrogen Fixation](nitrogen-fixation/) | Atmospheric N₂ fixation when TIN is depleted | `nfix_option_input.csv` |
-| [2. Algal Harvesting](algal-harvesting/) | Time-scheduled removal of algae from segments | `harvest_option_input.csv` + time-series file |
-| [3. Minimum Algae (Seed Population)](minimum-algae/) | Maintains a floor algal concentration | `low_do_mort_input.csv` (shared) |
-| [4. Low DO Mortality](low-do-mortality/) | Elevated mortality under prolonged hypoxia | `low_do_mort_input.csv` |
-| [Quick Start Guide](quick-start/) | Setup instructions and important notes | -- |
+| Chapter                                              | Feature                                       | Input File(s)                                 |
+| ---------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| [1. Nitrogen Fixation](nitrogen-fixation/)           | Atmospheric N₂ fixation when TIN is depleted  | `nfix_option_input.csv`                       |
+| [2. Algal Harvesting](algal-harvesting/)             | Time-scheduled removal of algae from segments | `harvest_option_input.csv` + time-series file |
+| [3. Minimum Algae (Seed Population)](minimum-algae/) | Maintains a floor algal concentration         | `low_do_mort_input.csv` (shared)              |
+| [4. Hypoxic Conditions](low-do-mortality/)           | Elevated mortality under prolonged hypoxia    | `low_do_mort_input.csv`                       |
+| [Quick Start Guide](quick-start/)                    | Setup instructions and important notes        | --                                            |
 
 ## Feature Summary
 
-| Feature | Input File | Activation Condition |
-|---------|-----------|----------------------|
-| Minimum algae + Low DO mortality | `low_do_mort_input.csv` | File exists in run directory |
-| Nitrogen fixation | `nfix_option_input.csv` | File exists in run directory |
-| Algal harvesting | `harvest_option_input.csv` + time-series file | File exists and `NHF > 0` |
+| Feature                          | Input File                                    | Activation Condition         |
+| -------------------------------- | --------------------------------------------- | ---------------------------- |
+| Minimum algae + Low DO mortality | `low_do_mort_input.csv`                       | File exists in run directory |
+| Nitrogen fixation                | `nfix_option_input.csv`                       | File exists in run directory |
+| Algal harvesting                 | `harvest_option_input.csv` + time-series file | File exists and `NHF > 0`    |
 
 To disable any feature, remove (or rename) its input file from the run directory. No changes to the main control file are needed.
-
----
-

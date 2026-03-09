@@ -20,7 +20,7 @@ In practice, single-strategy scenarios should be evaluated first to establish th
 
 ## Scenario Design Matrix
 
-Table 6 provides a structured guide for configuring scenarios for each of the eight management strategies. For each strategy, the table identifies the model element to modify, the key variables to vary across scenario runs, and the primary output metrics for evaluating the response.
+Table 6 provides a structured guide for configuring scenarios for each of the nine management strategies. For each strategy, the table identifies the model element to modify, the key variables to vary across scenario runs, and the primary output metrics for evaluating the response.
 
 **Table 6. Scenario Design Matrix**
 
