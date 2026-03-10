@@ -1,0 +1,28 @@
+---
+title: "Low DO Mortality Logic"
+---
+flowchart TD
+    A["Start: Each time step,<br/>each cell K,I"] --> B{"ALG_O2LIM > 0.0?<br/>(feature enabled)"}
+    B -- No --> C["DO4(K,I) = 0.0"]
+    B -- Yes --> D{"O2(K,I) <= ALG_O2LIM?<br/>(DO at or below threshold)"}
+    D -- Yes --> E["DO4(K,I) = 1.0<br/>(hypoxic)"]
+    D -- No --> C
+
+    C --> F["DELT_LOW_DO(K,I) =<br/>(DELT_LOW_DO(K,I) + DLT) * DO4(K,I)"]
+    E --> F
+
+    F --> G{"DO4 = 0.0?"}
+    G -- Yes --> H["Timer resets to zero"]
+    G -- No --> I["Timer accumulates<br/>by DLT seconds"]
+
+    H --> J["Loop over algal groups JA"]
+    I --> J
+
+    J --> K["Compute normal mortality:<br/>AMR(K,I,JA) =<br/>(ATRMR + 1.0 - ATRMF) * AM(JA)"]
+    K --> L{"DELT_LOW_DO(K,I)<br/>> CRIT_T(JA)?"}
+    L -- Yes --> M["Override mortality:<br/>AMR(K,I,JA) = AM_LOW_DO(JA)<br/>(elevated replacement rate)"]
+    L -- No --> N["Keep normal mortality rate"]
+    M --> O{"More algal<br/>groups?"}
+    N --> O
+    O -- Yes --> J
+    O -- No --> Z["End"]

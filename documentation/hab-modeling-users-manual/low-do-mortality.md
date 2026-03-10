@@ -103,5 +103,9 @@ In this example with 3 algal groups:
 
 - **Mortality override:** `water-quality.f90` ~line 702 -- After CE-QUAL-W2 computes the normal mortality rate `AMR(K,I,JA)` on line 701, line 702 checks whether the accumulated low-DO duration exceeds the critical time for that algal group: `IF(DELT_LOW_DO(K,I) > CRIT_T(JA)) AMR(K,I,JA) = AM_LOW_DO(JA)`. If the condition is true, CE-QUAL-W2 replaces the normal mortality rate with the elevated rate.
 
+## Algorithm Flowchart
+
+![Low DO Mortality Logic](low-do-mortality.png)
+
 {% include section-nav-bottom.html section="hab-users-manual" %}
 

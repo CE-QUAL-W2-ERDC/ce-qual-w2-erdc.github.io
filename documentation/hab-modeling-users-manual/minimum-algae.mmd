@@ -1,0 +1,17 @@
+---
+title: "Minimum Algae (Seed Population) Logic"
+---
+flowchart TD
+    A["Start: After all transport,<br/>kinetics, and harvesting<br/>calculations for time step"] --> B{"Does<br/>low_do_mort_input.csv<br/>exist?"}
+    B -- No --> C["ALG_MIN = 0.0<br/>(feature inactive)"]
+    C --> Z["End"]
+    B -- Yes --> D["Read ALG_MIN<br/>from input file"]
+    D --> E{"ALG_MIN > 0.0?"}
+    E -- No --> Z
+    E -- Yes --> F["Loop over all cells K,I<br/>and all algal groups JC"]
+    F --> G{"C1(K,I,CN(JC))<br/>< ALG_MIN?"}
+    G -- Yes --> H["C1(K,I,CN(JC)) = ALG_MIN<br/>(reset to seed floor)"]
+    H --> I{"More cells<br/>or groups?"}
+    G -- No --> I
+    I -- Yes --> F
+    I -- No --> Z

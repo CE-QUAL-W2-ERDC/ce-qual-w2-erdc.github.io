@@ -130,4 +130,8 @@ CE-QUAL-W2 automatically creates this file in the run directory when harvesting 
 - **Apply harvesting:** `update.F90` ~lines 96--145 -- For each algal constituent in each cell, CE-QUAL-W2 checks whether the cell belongs to a harvested segment. If `HADEP > 0`, the model computes the cell depth below the water surface and skips cells deeper than `HADEP`. The model computes the removed concentration as `C1 * FHA`, accumulates the removed mass (`REMOVED * CELL_VOL`) into `HAMASS_EVENT`, and subtracts the removed concentration from `C1`. After all spatial loops complete, the model writes harvest event data to `harvest_mass_output.csv`, updates cumulative mass totals, and resets `FHA` to zero.
 - **Open mass output file:** `init.F90` ~lines 132--137 -- CE-QUAL-W2 sets the `HARVESTING` flag to `.TRUE.` when `NHF > 0`. If `HARVESTING` is true, the model opens `harvest_mass_output.csv` and writes the column header line.
 
+## Algorithm Flowchart
+
+![Algal Harvesting Logic](algal-harvesting.png)
+
 {% include section-nav-bottom.html section="hab-users-manual" %}

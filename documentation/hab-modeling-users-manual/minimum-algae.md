@@ -42,4 +42,8 @@ The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also cont
 
 - **Applied:** `update.F90` ~line 120 -- After all transport, kinetics, and harvesting updates are complete for each algal group in each cell, CE-QUAL-W2 checks whether the resulting concentration `C1(K,I,CN(JC))` is less than `ALG_MIN`. If so, the model resets the concentration to `ALG_MIN`, ensuring that a minimum seed population is maintained for potential regrowth.
 
+## Algorithm Flowchart
+
+![Minimum Algae (Seed Population) Logic](minimum-algae.png)
+
 {% include section-nav-bottom.html section="hab-users-manual" %}

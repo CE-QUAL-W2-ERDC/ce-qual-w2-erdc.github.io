@@ -61,4 +61,8 @@ In this example with 3 algal groups, only group 3 (e.g., _Aphanizominon_) fixes 
 - **NH₄ uptake suppression:** `water-quality.f90` ~line 1505 -- The original code accumulated algal ammonium uptake whenever `AHSN > 0`. The N-fixation modification adds a second condition: uptake is only accumulated when `CRIT_TIN(JA) < TIN` (i.e., TIN is above the threshold). When TIN drops below `CRIT_TIN(JA)`, the condition fails, and the group's NH₄ uptake term is skipped entirely -- the algae obtain their nitrogen from atmospheric N₂ rather than from the water column.
 - **NO₃ uptake suppression:** `water-quality.f90` ~line 1579 -- Identical logic to the NH₄ case. The original nitrate uptake accumulation (`NO3AG`) is conditioned on both `AHSN > 0` and `CRIT_TIN(JA) < TIN`. When N-fixation is active (TIN below the threshold), the group's NO₃ uptake is suppressed.
 
+## Algorithm Flowchart
+
+![Nitrogen Fixation Logic](nitrogen-fixation.png)
+
 {% include section-nav-bottom.html section="hab-users-manual" %}

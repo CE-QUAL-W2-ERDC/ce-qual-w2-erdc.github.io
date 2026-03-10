@@ -1,0 +1,36 @@
+---
+title: "Algal Harvesting Logic"
+---
+flowchart TD
+    A["Start: Each time step"] --> B{"NHF > 0?<br/>(harvesting enabled)"}
+    B -- No --> Z["End"]
+    B -- Yes --> C{"JDAY >= NXFHA1?<br/>(harvest event reached)"}
+    C -- No --> Z
+    C -- Yes --> D["Advance schedule:<br/>clamp FHANX to 0,1<br/>copy FHANX into FHA"]
+    D --> E["Read next row from<br/>time-series file"]
+    E --> F{"End of file?"}
+    F -- Yes --> G["NXFHA1 = 1.0E10<br/>FHANX = 0.0<br/>(no more events)"]
+    F -- No --> H["Store next JDAY<br/>and FHA values"]
+
+    G --> I["Loop over cells K,I<br/>and algal groups JC"]
+    H --> I
+
+    I --> J["Loop over harvest<br/>segments JHA = 1,NHF"]
+    J --> K{"Cell in segment<br/>IHA(JHA)?"}
+    K -- No --> P{"More harvest<br/>segments?"}
+    K -- Yes --> L{"FHA(JHA) > 0?"}
+    L -- No --> P
+    L -- Yes --> M{"HADEP(JHA) > 0<br/>and cell deeper<br/>than HADEP?"}
+    M -- Yes --> P
+    M -- No --> N["REMOVED = C1 * FHA(JHA)<br/>HAMASS_EVENT += REMOVED * CELL_VOL<br/>C1 = C1 - REMOVED"]
+    N --> P
+    P -- Yes --> J
+    P -- No --> Q{"C1 < ALG_MIN?"}
+    Q -- Yes --> R["C1 = ALG_MIN<br/>(enforce seed floor)"]
+    Q -- No --> S{"More cells<br/>or groups?"}
+    R --> S
+    S -- Yes --> I
+    S -- No --> T["Write event data to<br/>harvest_mass_output.csv"]
+    T --> U["Update cumulative<br/>mass totals"]
+    U --> V["Reset FHA = 0<br/>for all segments"]
+    V --> Z
