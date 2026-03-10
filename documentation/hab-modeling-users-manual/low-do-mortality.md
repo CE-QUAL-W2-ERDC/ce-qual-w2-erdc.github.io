@@ -53,7 +53,7 @@ Note that `AM_LOW_DO` is a **replacement** mortality rate (d⁻¹), not a multip
 | Parameter | Units | Per-group? | Description |
 |-----------|-------|------------|-------------|
 | `ALG_O2LIM` | mg L⁻¹ | No (scalar) | DO concentration threshold. CE-QUAL-W2 considers cells with DO at or below this value to be hypoxic. |
-| `ALG_MIN` | mg L⁻¹ | No (scalar) | Minimum algae seed concentration (see [Chapter 1](/hab-modeling/minimum-algae/)). |
+| `ALG_MIN` | mg L⁻¹ | No (scalar) | Minimum algae seed concentration (see [Minimum Algae (Seed Population)](/hab-modeling/minimum-algae/)). |
 | `CRIT_T(JA)` | days | Yes (one per algal group) | Duration that DO must remain at or below `ALG_O2LIM` before CE-QUAL-W2 activates elevated mortality for that group. |
 | `AM_LOW_DO(JA)` | d⁻¹ | Yes (one per algal group) | Elevated mortality rate that CE-QUAL-W2 applies when the critical duration is exceeded. |
 

@@ -10,7 +10,7 @@ permalink: /hab-modeling/minimum-algae/
 
 ## Purpose
 
-Prevents algal concentrations from dropping below a minimum "seed" value. This feature ensures that a residual population persists for regrowth after die-off events such as hypoxic mortality or harvesting.
+Prevents algal concentrations from dropping below a minimum "seed" value. This feature ensures that a residual population persists for regrowth after die-off events such as [hypoxic mortality](/hab-modeling/low-do-mortality/) or [harvesting](/hab-modeling/algal-harvesting/).
 
 ## Activation
 

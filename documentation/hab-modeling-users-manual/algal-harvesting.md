@@ -22,7 +22,7 @@ Place `harvest_option_input.csv` in the model run directory. CE-QUAL-W2 activate
 2. When a harvest event occurs, CE-QUAL-W2 loops over each harvested segment and each active algal group and removes a fraction `FHA` of the algal concentration from each cell in the water column.
 3. If a maximum harvest depth (`HADEP`) is specified for a segment, CE-QUAL-W2 skips cells whose center lies deeper than `HADEP` below the water surface.
 4. CE-QUAL-W2 tracks the harvested mass per event and cumulatively and writes the results to `harvest_mass_output.csv`.
-5. After harvesting, CE-QUAL-W2 applies the minimum algae floor (`ALG_MIN`), so the model cannot harvest algae below the seed concentration.
+5. After harvesting, CE-QUAL-W2 applies the [minimum algae floor](/hab-modeling/minimum-algae/) (`ALG_MIN`), so the model cannot harvest algae below the seed concentration.
 
 **Harvesting is instantaneous** -- CE-QUAL-W2 applies the fractional removal `FHA` once at the event JDAY, then resets `FHA` to zero internally. The model automatically clamps `FHA` values to the range [0, 1].
 
