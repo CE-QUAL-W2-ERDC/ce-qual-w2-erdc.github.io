@@ -24,7 +24,7 @@ All four features use **file-existence-based activation**. None of these feature
 | [1. Nitrogen Fixation](nitrogen-fixation/)           | Atmospheric N₂ fixation when TIN is depleted  | `nfix_option_input.csv`                       |
 | [2. Algal Harvesting](algal-harvesting/)             | Time-scheduled removal of algae from segments | `harvest_option_input.csv` + time-series file |
 | [3. Minimum Algae (Seed Population)](minimum-algae/) | Floor algal concentration maintained by model  | `low_do_mort_input.csv` (shared)              |
-| [4. Hypoxic Conditions](low-do-mortality/)           | Elevated mortality under prolonged hypoxia    | `low_do_mort_input.csv`                       |
+| [4. Low DO Mortality](low-do-mortality/)             | Elevated mortality under prolonged hypoxia    | `low_do_mort_input.csv`                       |
 | [Quick Start Guide](quick-start/)                    | Setup instructions and important notes        | --                                            |
 
 ## Feature Summary

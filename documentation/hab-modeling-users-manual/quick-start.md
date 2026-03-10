@@ -12,11 +12,11 @@ To enable any combination of HAB features, copy the relevant CSV file(s) into th
 
 | To enable... | Copy these files to the run directory |
 |--------------|---------------------------------------|
+| Nitrogen fixation | `nfix_option_input.csv` |
+| Algal harvesting | `harvest_option_input.csv` + the time-series file named inside it |
 | Minimum algae only | `low_do_mort_input.csv` (set `ALG_O2LIM = 0.0`, set `ALG_MIN` to desired seed value) |
 | Low DO mortality only | `low_do_mort_input.csv` (set `ALG_MIN = 0.0` if no seed needed) |
 | Both minimum algae and low DO mortality | `low_do_mort_input.csv` (set both `ALG_O2LIM > 0` and `ALG_MIN > 0`) |
-| Nitrogen fixation | `nfix_option_input.csv` |
-| Algal harvesting | `harvest_option_input.csv` + the time-series file named inside it |
 | All features | All three CSV files + the harvest time-series file |
 
 To disable a feature, remove (or rename) its input file from the run directory. No changes to the main control file are needed.
@@ -35,10 +35,10 @@ To disable a feature, remove (or rename) its input file from the run directory. 
 
 | Chapter | Feature |
 |---------|---------|
-| [1. Minimum Algae](/hab-modeling/minimum-algae/) | Seed population floor |
-| [2. Low DO Mortality](/hab-modeling/low-do-mortality/) | Hypoxic mortality override |
-| [3. Algal Harvesting](/hab-modeling/algal-harvesting/) | Scheduled algal removal |
-| [4. Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | Atmospheric N₂ fixation |
+| [1. Nitrogen Fixation](/hab-modeling/nitrogen-fixation/) | Atmospheric N₂ fixation |
+| [2. Algal Harvesting](/hab-modeling/algal-harvesting/) | Scheduled algal removal |
+| [3. Minimum Algae](/hab-modeling/minimum-algae/) | Seed population floor |
+| [4. Low DO Mortality](/hab-modeling/low-do-mortality/) | Hypoxic mortality override |
 
 {% include section-nav-bottom.html section="hab-users-manual" %}
 

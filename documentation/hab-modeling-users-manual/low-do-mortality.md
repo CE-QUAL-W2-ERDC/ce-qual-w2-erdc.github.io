@@ -6,7 +6,7 @@ permalink: /hab-modeling/low-do-mortality/
 
 {% include section-nav.html section="hab-users-manual" %}
 
-# Chapter 2: Low DO Mortality (Hypoxic Conditions)
+# Chapter 4: Low DO Mortality (Hypoxic Conditions)
 
 ## Purpose
 

@@ -6,7 +6,7 @@ permalink: /hab-modeling/nitrogen-fixation/
 
 {% include section-nav.html section="hab-users-manual" %}
 
-# Chapter 4: Nitrogen Fixation
+# Chapter 1: Nitrogen Fixation
 
 ## Purpose
 

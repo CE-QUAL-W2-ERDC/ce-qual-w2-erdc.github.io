@@ -6,7 +6,7 @@ permalink: /hab-modeling/minimum-algae/
 
 {% include section-nav.html section="hab-users-manual" %}
 
-# Chapter 1: Minimum Algae (Seed Population)
+# Chapter 3: Minimum Algae (Seed Population)
 
 ## Purpose
 
@@ -34,7 +34,7 @@ If the algal concentration in a cell falls below `ALG_MIN`, CE-QUAL-W2 resets th
 
 ## Input File Format
 
-The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also contains the low DO mortality parameters. See [Chapter 2: Low DO Mortality](/hab-modeling/low-do-mortality/) for the complete file format and an inline listing of the example file.
+The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also contains the low DO mortality parameters. See [Chapter 4: Low DO Mortality](/hab-modeling/low-do-mortality/) for the complete file format and an inline listing of the example file.
 
 ## Source Code References
 

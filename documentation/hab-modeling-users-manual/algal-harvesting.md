@@ -6,7 +6,7 @@ permalink: /hab-modeling/algal-harvesting/
 
 {% include section-nav.html section="hab-users-manual" %}
 
-# Chapter 3: Algal Harvesting
+# Chapter 2: Algal Harvesting
 
 ## Purpose
 
