@@ -1,6 +1,7 @@
 ---
 title: "Minimum Algae (Seed Population) Logic"
 ---
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e8f4fd', 'primaryTextColor': '#000000', 'primaryBorderColor': '#333333', 'lineColor': '#333333', 'secondaryColor': '#f0f0f0', 'tertiaryColor': '#ffffff', 'background': '#ffffff', 'mainBkg': '#e8f4fd', 'nodeBorder': '#333333', 'clusterBkg': '#ffffff', 'titleColor': '#000000', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
     A["Start: After all transport,<br/>kinetics, and harvesting<br/>calculations for time step"] --> B{"Does<br/>low_do_mort_input.csv<br/>exist?"}
     B -- No --> C["ALG_MIN = 0.0<br/>(feature inactive)"]
