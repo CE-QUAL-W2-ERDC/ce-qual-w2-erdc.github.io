@@ -10,21 +10,21 @@ permalink: /hab-modeling/algal-harvesting/
 
 ## Purpose
 
-Simulates physical removal of algae from specified segments at scheduled times. This can represent mechanical harvesting, skimming operations, or other management actions. Features include depth-limited harvesting and mass tracking.
+The algal harvesting feature simulates physical removal of algae from specified segments at scheduled times. This feature can represent mechanical harvesting, skimming operations, or other management actions. CE-QUAL-W2 supports depth-limited harvesting and tracks the mass removed per event and cumulatively.
 
 ## Activation
 
-Place `harvest_option_input.csv` in the model run directory. The feature activates when `NHF > 0` (at least one harvest segment is defined). A second file containing the time-series of harvest events (named inside the option file) must also be present.
+Place `harvest_option_input.csv` in the model run directory. CE-QUAL-W2 activates the feature when `NHF > 0` (at least one harvest segment is defined). A second file containing the time-series of harvest events (named inside the option file) must also be present.
 
 ## How It Works
 
-1. At each time step, the model checks whether the current Julian day (`JDAY`) has reached the next scheduled harvest event from the time-series file.
-2. When a harvest event occurs, for each harvested segment and each active algal group, the model removes a fraction `FHA` of the algal concentration from each cell in the water column.
-3. If a maximum harvest depth (`HADEP`) is specified for a segment, only cells with their center above that depth (measured from the water surface) are harvested.
-4. The harvested mass is tracked per-event and cumulatively, and written to `harvest_mass_output.csv`.
-5. After harvesting, the minimum algae floor (`ALG_MIN`) is applied, so algae cannot be harvested below the seed concentration.
+1. At each time step, CE-QUAL-W2 checks whether the current Julian day (`JDAY`) has reached the next scheduled harvest event from the time-series file.
+2. When a harvest event occurs, CE-QUAL-W2 loops over each harvested segment and each active algal group and removes a fraction `FHA` of the algal concentration from each cell in the water column.
+3. If a maximum harvest depth (`HADEP`) is specified for a segment, CE-QUAL-W2 skips cells whose center lies deeper than `HADEP` below the water surface.
+4. CE-QUAL-W2 tracks the harvested mass per event and cumulatively and writes the results to `harvest_mass_output.csv`.
+5. After harvesting, CE-QUAL-W2 applies the minimum algae floor (`ALG_MIN`), so the model cannot harvest algae below the seed concentration.
 
-**Harvesting is instantaneous** -- the fractional removal `FHA` is applied once at the event JDAY, then `FHA` is automatically reset to zero internally. FHA values are automatically clamped to the range [0, 1].
+**Harvesting is instantaneous** -- CE-QUAL-W2 applies the fractional removal `FHA` once at the event JDAY, then resets `FHA` to zero internally. The model automatically clamps `FHA` values to the range [0, 1].
 
 ## Parameters
 
@@ -52,7 +52,7 @@ Place `harvest_option_input.csv` in the model run directory. The feature activat
 | 8 | Description (skipped) -- **optional line** |
 | 9 | `HADEP(1), HADEP(2), ... HADEP(NHF)` -- max depth in meters -- **optional line** |
 
-Lines 8-9 are optional. If missing or unreadable, `HADEP` defaults to `0.0` for all segments (harvest the full water column).
+Lines 8--9 are optional. If the lines are missing or unreadable, CE-QUAL-W2 defaults `HADEP` to `0.0` for all segments (harvest the full water column).
 
 ### Example File Listing
 
@@ -68,7 +68,7 @@ Maximum harvest depth per segment in meters. 0 = harvest all layers. One value p
 3.0, 0.0
 ```
 
-In this example, segment 15 is harvested to a maximum depth of 3.0 m (only layers with their center within 3 m of the surface), and segment 22 is harvested through the full water column.
+In this example, CE-QUAL-W2 harvests segment 15 to a maximum depth of 3.0 m (only layers with their center within 3 m of the surface) and harvests segment 22 through the full water column.
 
 ## Time-Series File (e.g., `harvest_timeseries.csv`)
 
@@ -81,12 +81,12 @@ In this example, segment 15 is harvested to a maximum depth of 3.0 m (only layer
 | 3+ | `JDAY, FHA(1), FHA(2), ... FHA(NHF)` -- one row per harvest event |
 
 - `JDAY` is the Julian day of the harvest event.
-- `FHA` is the fractional removal (0.0 to 1.0). For example, `0.50` removes 50% of algae. Values are automatically clamped to [0, 1].
+- `FHA` is the fractional removal (0.0 to 1.0). For example, `0.50` removes 50% of algae. CE-QUAL-W2 automatically clamps values to [0, 1].
 - Set `FHA = 0.0` for a segment to skip harvesting at that segment for that event.
 - Rows must be in chronological order.
-- The file is read sequentially; when the end of file is reached, no further harvesting occurs.
+- CE-QUAL-W2 reads the file sequentially; when the model reaches the end of file, no further harvesting occurs.
 
-**Important:** The first data row is loaded at initialization. If harvesting should not begin at the start of the simulation, include a leading row with `FHA = 0.0` for all segments at a JDAY before or at the simulation start time.
+**Important:** CE-QUAL-W2 loads the first data row at initialization. If harvesting should not begin at the start of the simulation, include a leading row with `FHA = 0.0` for all segments at a JDAY before or at the simulation start time.
 
 ### Example File Listing
 
@@ -101,15 +101,15 @@ JDAY      FHA(1)    FHA(2)
 
 In this example:
 
-- On JDAY 150, 50% of algae are removed from segment 15 (above 3 m depth) and 30% from segment 22 (all layers).
-- On JDAY 165, segment 15 is skipped (`FHA = 0.0`) and 80% is removed from segment 22.
-- On JDAY 200, 25% is removed from segment 15 and segment 22 is skipped.
-- On JDAY 250, 10% is removed from both segments.
-- After JDAY 250, no further harvesting occurs.
+- On JDAY 150, CE-QUAL-W2 removes 50% of algae from segment 15 (above 3 m depth) and 30% from segment 22 (all layers).
+- On JDAY 165, the model skips segment 15 (`FHA = 0.0`) and removes 80% from segment 22.
+- On JDAY 200, the model removes 25% from segment 15 and skips segment 22.
+- On JDAY 250, the model removes 10% from both segments.
+- After JDAY 250, no further harvesting occurs because CE-QUAL-W2 has reached the end of the time-series file.
 
 ## Output File: `harvest_mass_output.csv`
 
-The model automatically creates this file in the run directory when harvesting is active. It logs every harvest event with the following columns:
+CE-QUAL-W2 automatically creates this file in the run directory when harvesting is active. The model logs every harvest event with the following columns:
 
 | Column | Description |
 |--------|-------------|
@@ -119,17 +119,15 @@ The model automatically creates this file in the run directory when harvesting i
 | `Event_Mass_kg` | Mass removed in this event (kg), summed across all algal groups |
 | `Cumulative_Mass_kg` | Running total of mass removed at this segment (kg), summed across all algal groups |
 
-Note that `Event_Mass_kg` and `Cumulative_Mass_kg` report totals across all algal groups, not per-group values.
+`Event_Mass_kg` and `Cumulative_Mass_kg` report totals across all algal groups, not per-group values.
 
 ## Source Code References
 
-- Static config read: `input.F90` ~lines 2341-2365
-- Time-series initial read: `time-varying-data.f90` ~lines 475-494
-- Time-series runtime update: `time-varying-data.f90` ~lines 1711-1730
-- Branch mapping: `init-geom.F90` ~lines 221-226
-- Harvesting applied: `update.F90` ~lines 96-145
-- Mass output file opened: `init.F90` ~lines 134-137
+- **Read static config:** `input.F90` ~lines 2341--2365 -- CE-QUAL-W2 checks whether `harvest_option_input.csv` exists; if so, the model reads `HAFFN`, `NHF`, `IHA(1:NHF)`, and optionally `HADEP(1:NHF)`. If the file is absent, `NHF` remains 0 and the feature is inactive. If the `HADEP` lines are missing or unreadable, the model defaults `HADEP` to 0.0 for all segments.
+- **Read time-series (initialization):** `time-varying-data.f90` ~lines 476--494 -- When `NHF > 0`, CE-QUAL-W2 opens the time-series file specified by `HAFFN`, skips the two header lines, reads the first data row (`NXFHA2`, `FHA`), clamps each `FHA` value to [0, 1], and reads ahead one row (`NXFHA1`, `FHANX`) so the model knows the JDAY of the next event. If the read-ahead reaches end-of-file, the model sets `NXFHA1` to a large value and zeroes `FHANX` so no further events occur.
+- **Read time-series (runtime update):** `time-varying-data.f90` ~lines 1711--1729 -- At each time step when `NHF > 0`, CE-QUAL-W2 checks whether `JDAY >= NXFHA1`. If so, the model advances the harvest schedule: it copies `FHANX` into `FHA`, clamps values to [0, 1], and reads the next row from the time-series file. If the read reaches end-of-file, the model sets `NXFHA1` to a large value, zeroes `FHANX`, and exits the loop.
+- **Branch mapping:** `init-geom.F90` ~lines 221--227 -- CE-QUAL-W2 maps each harvested segment `IHA(JHA)` to its branch index `JBHA(JHA)` by checking whether the segment falls between the upstream and downstream segments of each branch. The model uses this mapping during the harvesting calculation to match segments to branches.
+- **Apply harvesting:** `update.F90` ~lines 96--145 -- For each algal constituent in each cell, CE-QUAL-W2 checks whether the cell belongs to a harvested segment. If `HADEP > 0`, the model computes the cell depth below the water surface and skips cells deeper than `HADEP`. The model computes the removed concentration as `C1 * FHA`, accumulates the removed mass (`REMOVED * CELL_VOL`) into `HAMASS_EVENT`, and subtracts the removed concentration from `C1`. After all spatial loops complete, the model writes harvest event data to `harvest_mass_output.csv`, updates cumulative mass totals, and resets `FHA` to zero.
+- **Open mass output file:** `init.F90` ~lines 132--137 -- CE-QUAL-W2 sets the `HARVESTING` flag to `.TRUE.` when `NHF > 0`. If `HARVESTING` is true, the model opens `harvest_mass_output.csv` and writes the column header line.
 
 {% include section-nav-bottom.html section="hab-users-manual" %}
-
-
