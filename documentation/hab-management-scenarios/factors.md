@@ -8,7 +8,7 @@ permalink: /hab-modeling/hab-management-scenarios/factors/
 
 # Factors Controlling HAB Development
 
-Cyanobacterial harmful algal blooms (HABs) arise from the convergence of physical, chemical, and biological conditions that selectively favor cyanobacteria over competing phytoplankton. Identifying which factors are most influential in a given system is a prerequisite both for selecting effective management interventions and for configuring numerical models to evaluate those interventions. The synthesis presented here draws primarily from the review by Summers and Ryder (2023, Section 3) and the references cited therein.
+Cyanobacterial harmful algal blooms (CyanoHABs) arise from the convergence of physical, chemical, and biological conditions that selectively favor cyanobacteria over competing phytoplankton. Identifying which factors are most influential in a given system is a prerequisite both for selecting effective management interventions and for configuring numerical models to evaluate those interventions.
 
 Table 1 summarizes the major environmental factors that govern cyanobacterial bloom development, the conditions under which each factor promotes or suppresses blooms, and key supporting references.
 
@@ -18,13 +18,13 @@ Table 1 summarizes the major environmental factors that govern cyanobacterial bl
 |--------|---------------------|----------------------|----------------|
 | Thermal stratification | Strong, persistent | Weak or absent | Dantas et al. 2011; Bormans et al. 1997 |
 | Water temperature | High (>25 &deg;C) | Low (<15 &deg;C), though cold-water blooms do occur | Nalewajko and Murphy 2001; Xiao et al. 2017 |
-| Residence time | Long | Short | Soballe and Kimmel 1987; Padisak et al. 1999 |
+| Residence time | Long | Short | Soballe and Kimmel 1987; Jeppeson et al. 2015 |
 | Flow velocity | Low (<0.05 m/s) | High (>0.05 m/s) | Mitrovic et al. 2003, 2011 |
 | Wind speed | Low (\<3 m/s) | High (>3 m/s) | Zhang et al. 2021; Cao et al. 2011 |
 | Nutrient availability | High P and/or N | Low P and/or N | Paerl et al. 2016; Filstrup and Downing 2017 |
-| N:P ratio | Low (<10:1, favors N-fixers) | High (>50:1, favors non-cyanobacteria) | Harris et al. 2014; Scott et al. 2013 |
+| N:P ratio | Low (<10:1, favors N-fixers) | High (>50:1, favors non-cyanobacteria) | Harris et al. 2014; Scott et al. 2013; Dzialowski et al. 2005 |
 | Light availability | High surface irradiance | Low irradiance or high turbidity | Islam and Beardall 2017; Dou et al. 2019 |
-| Water depth | Shallow (<15 m mixed depth) | Deep (>15 m, enables mixing strategies) | Visser et al. 2016 |
+| Water depth | Shallow (<15 m mixed depth) | Deep (>15 m, enables mixing strategies) | Visser et al. 2016; Zhang et al. 2021 |
 | Water level | Low or declining | High or stable | Xia et al. 2020; Jeppesen et al. 2015 |
 | Hypolimnetic DO | Low (anoxic, drives internal P loading) | High (oxic, suppresses sediment P release) | Nurnberg 2009 |
 
@@ -36,11 +36,11 @@ Wind-driven mixing exerts an analogous control at shorter timescales. Zhang et a
 
 ## Nutrients
 
-Phosphorus (P) has historically been regarded as the primary limiting nutrient for phytoplankton growth in freshwater systems, and total phosphorus (TP) remains the most common target for eutrophication management. However, the role of nitrogen (N) has received increasing attention (Paerl et al. 2016). Many bloom-forming cyanobacteria are diazotrophs capable of fixing atmospheric nitrogen, which confers a competitive advantage under conditions of low dissolved inorganic nitrogen and elevated phosphorus. Nitrogen fixation is nevertheless energetically expensive, and in systems where denitrification losses exceed fixation inputs, reducing phosphorus alone may be insufficient to suppress blooms (Scott et al. 2019).
+Phosphorus (P) has historically been regarded as the primary limiting nutrient for phytoplankton growth in freshwater systems, and total phosphorus (TP) remains the most common target for eutrophication management in reservoir systems. However, the role of nitrogen (N) has received increasing attention (Paerl et al. 2016). Many bloom-forming cyanobacteria are diazotrophs capable of fixing atmospheric nitrogen, which confers a competitive advantage under conditions of low dissolved inorganic nitrogen and elevated phosphorus. Nitrogen fixation is nevertheless energetically expensive, and in systems where denitrification losses exceed fixation inputs, reducing phosphorus alone may be insufficient to suppress blooms (Scott et al. 2019).
 
-The mass ratio of total nitrogen to total phosphorus (N:P) provides practical guidance on which nutrient to prioritize for reduction. Low N:P ratios (less than approximately 10:1) favor nitrogen-fixing genera such as *Anabaena* (now *Dolichospermum*) and *Aphanizomenon*, whereas high N:P ratios (greater than approximately 50:1) tend to shift community composition away from cyanobacteria (Harris et al. 2014). Internal loading of phosphorus from anoxic sediments represents an additional complication: legacy phosphorus stored in bottom sediments can sustain elevated water-column concentrations and prolong blooms long after external loads have been reduced (Nurnberg 2009). Addressing internal loading through hypolimnetic oxygenation, sediment capping, or drawdown to oxidize exposed sediments is therefore often a necessary complement to watershed-level nutrient reductions.
+The mass ratio of total nitrogen to total phosphorus (N:P) provides practical guidance on which nutrient to prioritize for reduction. Low N:P ratios (less than approximately 10:1) favor nitrogen-fixing genera such as *Anabaena* (now *Dolichospermum*) and *Aphanizomenon*, whereas high N:P ratios (greater than approximately 50:1) tend to shift community composition away from cyanobacteria (Harris et al. 2014). Internal loading of phosphorus from anoxic sediments represents an additional complication: legacy phosphorus stored in bottom sediments can sustain elevated water-column concentrations and prolong blooms long after external loads have been reduced (Nurnberg 2009). Addressing internal loading through hypolimnetic release, hypolimnetic oxygenation, sediment capping, or drawdown to oxidize exposed sediments is therefore often a necessary complement to watershed-level nutrient reductions.
 
-Table 2 presents a decision framework for nutrient management, adapted from the synthesis by Summers and Ryder (2023, Section 2.1). The framework links system trophic state and observed nutrient ratios to recommended management targets.
+Table 2 presents a decision framework for nutrient management, adapted from Summers and Ryder (2023). The framework links system trophic state and observed nutrient ratios to recommended management targets.
 
 **Table 2. Nutrient Management Decision Framework**
 
