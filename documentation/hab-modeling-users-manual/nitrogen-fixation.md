@@ -63,6 +63,6 @@ In this example with 3 algal groups, only group 3 (e.g., _Aphanizominon_) fixes 
 
 ## Algorithm Flowchart
 
-![Nitrogen Fixation Logic](nitrogen-fixation.png)
+![Nitrogen Fixation Logic](nitrogen-fixation.svg)
 
 {% include section-nav-bottom.html section="hab-users-manual" %}

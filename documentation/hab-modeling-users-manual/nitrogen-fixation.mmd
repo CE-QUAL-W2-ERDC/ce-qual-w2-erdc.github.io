@@ -10,9 +10,9 @@ flowchart TD
 
     D -- Yes --> E["N-Fixation Active"]
 
-    E --> F["1. Override N-limitation:<br/>ANLIM = TIN / (TIN + 0.0 + NONZERO)<br/>≈ 1.0 (no limitation)"]
-    F --> G["2. Suppress NH4 uptake:<br/>skip NH4AG accumulation<br/>for this group"]
-    G --> H["3. Suppress NO3 uptake:<br/>skip NO3AG accumulation<br/>for this group"]
+    E --> F["Override N-limitation:<br/>ANLIM = TIN / (TIN + 0.0 + NONZERO)<br/>≈ 1.0 (no limitation)"]
+    F --> G["Suppress NH4 uptake:<br/>skip NH4AG accumulation<br/>for this group"]
+    G --> H["Suppress NO3 uptake:<br/>skip NO3AG accumulation<br/>for this group"]
     H --> I["Algae grow as if nitrogen<br/>were abundant, obtaining N<br/>from atmospheric N2"]
 
     C --> J["Compute growth rate:<br/>AGR = ATRM * AG * LIMIT<br/>where LIMIT = min(APLIM, ANLIM,<br/>ASLIM, ALLIM)"]

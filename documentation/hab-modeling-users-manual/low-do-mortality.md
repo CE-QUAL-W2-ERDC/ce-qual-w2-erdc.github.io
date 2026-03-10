@@ -105,7 +105,7 @@ In this example with 3 algal groups:
 
 ## Algorithm Flowchart
 
-![Low DO Mortality Logic](low-do-mortality.png)
+![Low DO Mortality Logic](low-do-mortality.svg)
 
 {% include section-nav-bottom.html section="hab-users-manual" %}
 

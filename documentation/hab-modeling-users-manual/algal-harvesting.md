@@ -132,6 +132,6 @@ CE-QUAL-W2 automatically creates this file in the run directory when harvesting 
 
 ## Algorithm Flowchart
 
-![Algal Harvesting Logic](algal-harvesting.png)
+![Algal Harvesting Logic](algal-harvesting.svg)
 
 {% include section-nav-bottom.html section="hab-users-manual" %}

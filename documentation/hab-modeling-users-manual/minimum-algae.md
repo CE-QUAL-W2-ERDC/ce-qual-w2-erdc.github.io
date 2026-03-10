@@ -44,6 +44,6 @@ The `ALG_MIN` parameter is specified in `low_do_mort_input.csv`, which also cont
 
 ## Algorithm Flowchart
 
-![Minimum Algae (Seed Population) Logic](minimum-algae.png)
+![Minimum Algae (Seed Population) Logic](minimum-algae.svg)
 
 {% include section-nav-bottom.html section="hab-users-manual" %}
