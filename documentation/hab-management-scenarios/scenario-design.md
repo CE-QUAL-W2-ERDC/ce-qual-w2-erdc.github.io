@@ -49,20 +49,20 @@ Table 7 lists recommended performance metrics, the information each provides, an
 
 | Metric | What It Indicates | Relevant Strategies |
 |--------|-------------------|---------------------|
-| Peak surface Chl-a (ug/L) | Maximum bloom intensity | All |
+| Peak surface Chl-a (μg L⁻¹) | Maximum bloom intensity | All |
 | Bloom duration (days above threshold) | Temporal persistence of HAB conditions | All |
-| Bloom volume (m^3 above threshold) | Spatial extent and severity of bloom | All |
-| Habitat volume (m^3 or % meeting criteria) | Volume of water meeting user-defined temperature and DO criteria | Aeration, mixing, withdrawals |
+| Bloom volume (m³ above threshold) | Spatial extent and severity of bloom | All |
+| Habitat volume (m³ or % meeting criteria) | Volume of water meeting user-defined temperature and DO criteria | Aeration, mixing, withdrawals |
 | Thermocline depth (m) | Stratification state and mixed-layer response | Mixing, pulsed inflows, withdrawals, aeration |
-| Schmidt stability (J/m^2) | Resistance of water column to mixing | Mixing, pulsed inflows |
+| Schmidt stability (J m⁻²) | Resistance of water column to mixing | Mixing, pulsed inflows |
 | Hydraulic residence time (days) | Rate of water replacement | Flushing, pulsed inflows |
-| Surface TP, TN (mg/L) | Nutrient availability in the photic zone | Withdrawals, aeration, nutrient reduction |
-| Hypolimnetic DO (mg/L) | Bottom-water oxygen conditions | Withdrawals, aeration, mixing |
-| Sediment P flux (mg/m^2/day) | Internal phosphorus loading from bottom sediments | Aeration, withdrawals, water level management |
+| Surface TP, TN (mg L⁻¹) | Nutrient availability in the photic zone | Withdrawals, aeration, nutrient reduction |
+| Hypolimnetic DO (mg L⁻¹) | Bottom-water oxygen conditions | Withdrawals, aeration, mixing |
+| Sediment P flux (mg m⁻² d⁻¹) | Internal phosphorus loading from bottom sediments | Aeration, withdrawals, water level management |
 | Algal group composition (%) | Community shift toward or away from cyanobacteria | Mixing, nutrient reduction |
 | Outflow quality (temperature, DO, nutrients) | Downstream impact of the management action | Withdrawals, flushing, curtains |
-| Intracellular toxin concentration (ug/L) | Cell-bound cyanotoxin levels | All strategies that affect algal biomass |
-| Extracellular toxin concentration (ug/L) | Dissolved cyanotoxin levels at intakes or recreation sites | Harvesting, flushing, chemical treatment workarounds |
+| Intracellular toxin concentration (μg L⁻¹) | Cell-bound cyanotoxin levels | All strategies that affect algal biomass |
+| Extracellular toxin concentration (μg L⁻¹) | Dissolved cyanotoxin levels at intakes or recreation sites | Harvesting, flushing, chemical treatment workarounds |
 | Cumulative harvested biomass (kg) | Total biomass removed across harvesting events | Algal harvesting |
 
 ### Key Quantitative Relationships
@@ -73,13 +73,13 @@ Hydraulic residence time is defined as
 
 > *tau* = *V* / *Q*
 
-where *V* is reservoir volume (m^3) and *Q* is total outflow (m^3/s). Longer residence times favor bloom development by allowing phytoplankton populations to accumulate faster than they are exported (Soballe and Kimmel 1987). The flushing rate is the inverse of residence time (*rho* = *Q* / *V*) and provides a direct measure of the volumetric turnover rate. Higher flushing rates reduce bloom potential by exporting biomass more rapidly than it can grow.
+where *V* is reservoir volume (m³) and *Q* is total outflow (m³ s⁻¹). Longer residence times favor bloom development by allowing phytoplankton populations to accumulate faster than they are exported (Soballe and Kimmel 1987). The flushing rate is the inverse of residence time (*rho* = *Q* / *V*) and provides a direct measure of the volumetric turnover rate. Higher flushing rates reduce bloom potential by exporting biomass more rapidly than it can grow.
 
 Mitrovic et al. (2003) identified a critical flow velocity of approximately 0.05 m/s for suppressing persistent blooms of *Anabaena circinalis* in riverine systems. Velocities above this threshold disrupt the quiescent conditions that buoyancy-regulating cyanobacteria require to maintain surface accumulations. This threshold provides a practical design target for pulsed-inflow and flushing scenarios.
 
 The intermediate disturbance hypothesis offers additional guidance for pulsed-inflow design. Padisak et al. (1999) found that pulsed disturbances recurring every 20--30 days at intensities of 1--2% of reservoir volume per day were sufficient to shift phytoplankton community composition away from cyanobacteria dominance. Disturbances that are too infrequent allow cyanobacteria to re-establish dominance between pulses, while overly frequent disturbances may select for fast-growing taxa without eliminating bloom risk.
 
-Schmidt stability quantifies the mechanical energy per unit surface area (J/m^2) required to mix the entire water column to uniform density. Higher values indicate stronger thermal stratification and greater resistance to mixing. Comparing Schmidt stability between baseline and scenario simulations provides a quantitative measure of how effectively a mixing or destratification strategy disrupts the stratified conditions that favor buoyant cyanobacteria (Visser et al. 2016).
+Schmidt stability quantifies the mechanical energy per unit surface area (J m⁻²) required to mix the entire water column to uniform density. Higher values indicate stronger thermal stratification and greater resistance to mixing. Comparing Schmidt stability between baseline and scenario simulations provides a quantitative measure of how effectively a mixing or destratification strategy disrupts the stratified conditions that favor buoyant cyanobacteria (Visser et al. 2016).
 
 {% include section-nav-bottom.html section="hab-management-scenarios" %}
 
