@@ -21,7 +21,9 @@ url: "https://ce-qual-w2-erdc.github.io"
 navigation:
   - title: Home
     url: /
-  - title: Documentation
+  - title: Documentation - ERDC V2026
+    url: /cequalw2-docs/
+  - title: Documentation - PSU V4.5
     url: /documentation/
   - title: Downloads
     url: /downloads/
